@@ -1,0 +1,90 @@
+[14-Jan-2025 13:43:54 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 40
+[14-Jan-2025 13:44:12 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 40
+[14-Jan-2025 13:44:36 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 40
+[14-Jan-2025 14:08:42 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 40
+[14-Jan-2025 14:08:51 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 40
+[14-Jan-2025 14:08:59 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 40
+[14-Jan-2025 14:09:06 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 40
+[14-Jan-2025 14:09:43 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 40
+[14-Jan-2025 15:14:48 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: The block 'content' has already been defined line 5. in /home/thibaultgicquel6201/public_html/templates/show.twig:13
+Stack trace:
+#0 /home/vendor/twig/twig/src/Parser.php(171): Twig\TokenParser\BlockTokenParser->parse()
+#1 /home/vendor/twig/twig/src/Parser.php(84): Twig\Parser->subparse()
+#2 /home/vendor/twig/twig/src/Environment.php(488): Twig\Parser->parse()
+#3 /home/vendor/twig/twig/src/Environment.php(516): Twig\Environment->parse()
+#4 /home/vendor/twig/twig/src/Environment.php(348): Twig\Environment->compileSource()
+#5 /home/vendor/twig/twig/src/Environment.php(309): Twig\Environment->loadTemplate()
+#6 /home/thibaultgicquel6201/public_html/index.php(38): Twig\Environment->load()
+#7 {main}
+  thrown in /home/thibaultgicquel6201/public_html/templates/show.twig on line 13
+[14-Jan-2025 15:14:50 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: The block 'content' has already been defined line 5. in /home/thibaultgicquel6201/public_html/templates/show.twig:13
+Stack trace:
+#0 /home/vendor/twig/twig/src/Parser.php(171): Twig\TokenParser\BlockTokenParser->parse()
+#1 /home/vendor/twig/twig/src/Parser.php(84): Twig\Parser->subparse()
+#2 /home/vendor/twig/twig/src/Environment.php(488): Twig\Parser->parse()
+#3 /home/vendor/twig/twig/src/Environment.php(516): Twig\Environment->parse()
+#4 /home/vendor/twig/twig/src/Environment.php(348): Twig\Environment->compileSource()
+#5 /home/vendor/twig/twig/src/Environment.php(309): Twig\Environment->loadTemplate()
+#6 /home/thibaultgicquel6201/public_html/index.php(38): Twig\Environment->load()
+#7 {main}
+  thrown in /home/thibaultgicquel6201/public_html/templates/show.twig on line 13
+[14-Jan-2025 15:18:34 Europe/Paris] PHP Notice:  Array to string conversion in /home/thibaultgicquel6201/public_html/index.php on line 32
+[14-Jan-2025 15:21:46 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: The block 'content' has already been defined line 5. in /home/thibaultgicquel6201/public_html/templates/show.twig:13
+Stack trace:
+#0 /home/vendor/twig/twig/src/Parser.php(171): Twig\TokenParser\BlockTokenParser->parse()
+#1 /home/vendor/twig/twig/src/Parser.php(84): Twig\Parser->subparse()
+#2 /home/vendor/twig/twig/src/Environment.php(488): Twig\Parser->parse()
+#3 /home/vendor/twig/twig/src/Environment.php(516): Twig\Environment->parse()
+#4 /home/vendor/twig/twig/src/Environment.php(348): Twig\Environment->compileSource()
+#5 /home/vendor/twig/twig/src/Environment.php(309): Twig\Environment->loadTemplate()
+#6 /home/thibaultgicquel6201/public_html/index.php(39): Twig\Environment->load()
+#7 {main}
+  thrown in /home/thibaultgicquel6201/public_html/templates/show.twig on line 13
+[14-Jan-2025 15:39:27 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 55
+[14-Jan-2025 15:45:50 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 55
+[14-Jan-2025 15:45:58 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 55
+[14-Jan-2025 15:57:19 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 55
+[14-Jan-2025 16:05:27 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 55
+[14-Jan-2025 16:06:34 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 55
+[14-Jan-2025 16:06:41 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 55
+[14-Jan-2025 16:06:55 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 55
+[14-Jan-2025 16:07:04 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 55
+[14-Jan-2025 16:07:18 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 55
+[14-Jan-2025 16:10:59 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 55
+[14-Jan-2025 16:11:01 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 55
+[14-Jan-2025 16:11:14 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 55
+[14-Jan-2025 16:11:40 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 55
+[14-Jan-2025 16:12:57 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 55
+[14-Jan-2025 16:13:21 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 55
+[14-Jan-2025 19:08:34 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 55
+[16-Jan-2025 09:41:19 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 55
+[16-Jan-2025 09:41:19 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 57
+[16-Jan-2025 09:41:37 Europe/Paris] PHP Notice:  Array to string conversion in /home/thibaultgicquel6201/public_html/index.php on line 55
+[16-Jan-2025 09:57:38 Europe/Paris] PHP Notice:  Array to string conversion in /home/thibaultgicquel6201/public_html/index.php on line 55
+[16-Jan-2025 10:01:26 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 55
+[16-Jan-2025 10:01:26 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 57
+[16-Jan-2025 12:15:37 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 55
+[16-Jan-2025 12:15:37 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 58
+[16-Jan-2025 12:16:31 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 55
+[16-Jan-2025 12:16:31 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 58
+[16-Jan-2025 12:32:11 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 55
+[16-Jan-2025 12:32:11 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 58
+[16-Jan-2025 14:14:42 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 55
+[16-Jan-2025 14:14:42 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 58
+[16-Jan-2025 14:14:43 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 55
+[16-Jan-2025 14:14:43 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 58
+[16-Jan-2025 14:14:47 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 55
+[16-Jan-2025 14:14:47 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 58
+[16-Jan-2025 14:14:55 Europe/Paris] PHP Notice:  Array to string conversion in /home/thibaultgicquel6201/public_html/index.php on line 55
+[16-Jan-2025 14:14:58 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 55
+[16-Jan-2025 14:14:58 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 58
+[20-Jan-2025 23:21:35 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 55
+[20-Jan-2025 23:21:35 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 58
+[20-Jan-2025 23:21:40 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 55
+[20-Jan-2025 23:21:40 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 58
+[20-Jan-2025 23:26:07 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 55
+[20-Jan-2025 23:26:07 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 58
+[20-Jan-2025 23:27:58 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 55
+[20-Jan-2025 23:27:58 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 58
+[21-Jan-2025 00:12:05 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 55
+[21-Jan-2025 00:12:05 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 58

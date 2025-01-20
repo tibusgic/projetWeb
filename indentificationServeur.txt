@@ -1,0 +1,15 @@
+Suite à votre demande, un accès sur le serveur de développement a été créé. Ce serveur restera en ligne pendant 3 mois puis sera détruit ; assurez-vous d'avoir une sauvegarde. Les paramètres sont les suivants :
+
+GÉNÉRAL - HÉBERGEMENT
+URL du site : https://devbox.u-angers.fr/~thibaultgicquel6201/
+
+ACCÈS SFTP/SSH
+Host : devbox.u-angers.fr
+Port : 1322
+Nom d'utilisateur : thibaultgicquel6201
+Mot de passe : WOWjSaNlCy8C
+
+BASE DE DONNÉES - PHPMYADMIN
+Host : https://devbox.u-angers.fr/phpMyAdmin/
+Nom d'utilisateur : thibaultgicquel6201
+Mot de passe : WOWjSaNlCy8C
