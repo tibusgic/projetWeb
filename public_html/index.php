@@ -53,7 +53,7 @@ switch($action) {
 
 $template = $twig->load($action.'.twig');
         echo $_SESSION['data'];
-        echo 'test';
+        echo 'coucou123';
   echo $template->render(array(
   'data' => $_SESSION['data'],
   

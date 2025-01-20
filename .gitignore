@@ -8,3 +8,4 @@
 /.vscode-server
 /.wget-hsts
 .gitconfig
+public_html/php_error.log
