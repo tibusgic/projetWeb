@@ -208,3 +208,66 @@ Stack trace:
 [21-Jan-2025 15:46:44 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
 [21-Jan-2025 15:47:38 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
 [21-Jan-2025 15:49:15 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 16:00:40 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 16:00:58 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 16:00:58 Europe/Paris] PHP Notice:  Array to string conversion in /home/thibaultgicquel6201/public_html/index.php on line 21
+[21-Jan-2025 16:08:30 Europe/Berlin] PHP Notice:  Undefined variable: twig in /home/thibaultgicquel6201/public_html/php/manager.php on line 13
+[21-Jan-2025 16:08:30 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function load() on null in /home/thibaultgicquel6201/public_html/php/manager.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/thibaultgicquel6201/public_html/php/manager.php on line 13
+[21-Jan-2025 16:08:37 Europe/Berlin] PHP Notice:  Undefined variable: twig in /home/thibaultgicquel6201/public_html/php/manager.php on line 13
+[21-Jan-2025 16:08:37 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function load() on null in /home/thibaultgicquel6201/public_html/php/manager.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/thibaultgicquel6201/public_html/php/manager.php on line 13
+[21-Jan-2025 16:08:39 Europe/Berlin] PHP Notice:  Undefined variable: twig in /home/thibaultgicquel6201/public_html/php/manager.php on line 13
+[21-Jan-2025 16:08:39 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function load() on null in /home/thibaultgicquel6201/public_html/php/manager.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/thibaultgicquel6201/public_html/php/manager.php on line 13
+[21-Jan-2025 16:08:41 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 16:08:48 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 16:08:48 Europe/Paris] PHP Notice:  Array to string conversion in /home/thibaultgicquel6201/public_html/index.php on line 21
+[21-Jan-2025 16:08:48 Europe/Berlin] PHP Notice:  Undefined variable: twig in /home/thibaultgicquel6201/public_html/php/manager.php on line 13
+[21-Jan-2025 16:08:48 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function load() on null in /home/thibaultgicquel6201/public_html/php/manager.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/thibaultgicquel6201/public_html/php/manager.php on line 13
+[21-Jan-2025 16:09:13 Europe/Berlin] PHP Notice:  Undefined variable: twig in /home/thibaultgicquel6201/public_html/php/manager.php on line 13
+[21-Jan-2025 16:09:13 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function load() on null in /home/thibaultgicquel6201/public_html/php/manager.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/thibaultgicquel6201/public_html/php/manager.php on line 13
+[21-Jan-2025 16:09:14 Europe/Berlin] PHP Notice:  Undefined variable: twig in /home/thibaultgicquel6201/public_html/php/manager.php on line 13
+[21-Jan-2025 16:09:14 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function load() on null in /home/thibaultgicquel6201/public_html/php/manager.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/thibaultgicquel6201/public_html/php/manager.php on line 13
+[21-Jan-2025 16:10:03 Europe/Berlin] PHP Notice:  Undefined variable: twig in /home/thibaultgicquel6201/public_html/php/manager.php on line 12
+[21-Jan-2025 16:10:03 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function load() on null in /home/thibaultgicquel6201/public_html/php/manager.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/thibaultgicquel6201/public_html/php/manager.php on line 12
+[21-Jan-2025 16:14:10 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 16:15:17 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 16:15:17 Europe/Paris] PHP Notice:  Array to string conversion in /home/thibaultgicquel6201/public_html/index.php on line 21
+[21-Jan-2025 16:15:17 Europe/Berlin] PHP Notice:  Undefined variable: twig in /home/thibaultgicquel6201/public_html/php/manager.php on line 9
+[21-Jan-2025 16:15:17 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function load() on null in /home/thibaultgicquel6201/public_html/php/manager.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/thibaultgicquel6201/public_html/php/manager.php on line 9
+[21-Jan-2025 16:16:21 Europe/Berlin] PHP Notice:  Undefined variable: twig in /home/thibaultgicquel6201/public_html/php/manager.php on line 9
+[21-Jan-2025 16:16:21 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function load() on null in /home/thibaultgicquel6201/public_html/php/manager.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/thibaultgicquel6201/public_html/php/manager.php on line 9
+[21-Jan-2025 16:21:26 Europe/Berlin] PHP Warning:  require_once(include/config.php): failed to open stream: No such file or directory in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[21-Jan-2025 16:21:26 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'include/config.php' (include_path='.:/usr/share/php') in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[21-Jan-2025 16:21:45 Europe/Berlin] PHP Warning:  require_once(/include/config.php): failed to open stream: No such file or directory in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[21-Jan-2025 16:21:45 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required '/include/config.php' (include_path='.:/usr/share/php') in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[21-Jan-2025 16:21:47 Europe/Berlin] PHP Warning:  require_once(/include/config.php): failed to open stream: No such file or directory in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[21-Jan-2025 16:21:47 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required '/include/config.php' (include_path='.:/usr/share/php') in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[21-Jan-2025 16:22:53 Europe/Berlin] PHP Warning:  require_once(): https:// wrapper is disabled in the server configuration by allow_url_include=0 in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[21-Jan-2025 16:22:53 Europe/Berlin] PHP Warning:  require_once(https://devbox.u-angers.fr/~thibaultgicquel6201/public_html/include/config.php): failed to open stream: no suitable wrapper could be found in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[21-Jan-2025 16:22:53 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'https://devbox.u-angers.fr/~thibaultgicquel6201/public_html/include/config.php' (include_path='.:/usr/share/php') in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
