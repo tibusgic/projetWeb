@@ -1,17 +1,14 @@
 <?php
-session_start();
 
-// Assurez-vous que Twig est correctement initialisé
-require_once 'https://devbox.u-angers.fr/~thibaultgicquel6201/public_html/include/config.php'; // Inclure l'autoloader de Composer
-
+require_once('../include/config.php');
 
 // Vérification de la session
 if (!isset($_SESSION['user']) || $_SESSION['user']['status'] !== 'manager') {
-    header('Location: index.php');
+    header('Location: ../index.php');
     exit;
 }
 
-// Charger le template et afficher
+// Charger et afficher le template
 $template = $twig->load('dashboard.twig');
 echo $template->render([
     'error' => $error ?? null,
