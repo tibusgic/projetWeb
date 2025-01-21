@@ -4,7 +4,7 @@ require_once('include/config.php');
 
 $action = 'login';
 if(isset($_SESSION['user'])) {
-        $action = 'dashboard';
+        $action = 'login';
 }
 if(isset($_GET['a'])) {
         $action = $_GET['a'];
@@ -17,7 +17,8 @@ switch($action) {
                 $stmt->bindParam(':login', $_POST['user']);
                 $stmt->bindParam(':password', $_POST['pass']);
                 $stmt->execute();
-                $row = $stmt->fetch(PDO::FETCH_ASSOC);
+                $user = $stmt->fetch(PDO::FETCH_ASSOC);
+                echo $user;
 
                 if ($user) {
                         // Stocker les informations de l'utilisateur dans la session
@@ -27,17 +28,18 @@ switch($action) {
                             'prenom' => $user['prenom'],
                             'status' => $user['status']
                         ];
+
             
                         // Redirection en fonction du statut
                         switch ($user['status']) {
-                            case 'Manager':
-                                header('Location: manager.php');
+                            case 'manager':
+                                header('Location: php/manager.php');
                                 break;
                             case 'waiter':
-                                header('Location: waiter.php');
+                                header('Location: php/waiter.php');
                                 break;
-                            case 'admin':
-                                header('Location: employee.php');
+                            case 'employee':
+                                header('Location: php/employee.php');
                                 break;
                             default:
                                 header('Location: https://devbox.u-angers.fr/~thibaultgicquel6201/'); // Si le statut n'est pas reconnu
@@ -61,12 +63,10 @@ switch($action) {
                 break;
 }
 
-$template = $twig->load($action.'.twig');
-        echo $_SESSION['data'];
-        echo 'test';
-  echo $template->render(array(
-  'data' => $_SESSION['data'],
-  
-  'collection' => $collection ?? [], // Les données ou un tableau vide si rien n'est trouvé
-));
+// Charger le template correspondant avec Twig
+$template = $twig->load($action . '.twig');
+echo $template->render([
+    'error' => $error ?? null,
+    'user' => $_SESSION['user'] ?? null,
+]);
 

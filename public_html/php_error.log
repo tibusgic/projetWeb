@@ -102,3 +102,96 @@ Stack trace:
 [21-Jan-2025 13:43:41 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 58
 [21-Jan-2025 13:46:13 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 55
 [21-Jan-2025 13:46:13 Europe/Paris] PHP Notice:  Undefined index: data in /home/thibaultgicquel6201/public_html/index.php on line 58
+[21-Jan-2025 14:28:51 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 14:29:00 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 14:29:00 Europe/Paris] PHP Notice:  Undefined variable: user in /home/thibaultgicquel6201/public_html/index.php on line 22
+[21-Jan-2025 14:34:23 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 14:34:23 Europe/Paris] PHP Notice:  Undefined variable: user in /home/thibaultgicquel6201/public_html/index.php on line 22
+[21-Jan-2025 14:34:38 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 14:34:38 Europe/Paris] PHP Notice:  Undefined variable: user in /home/thibaultgicquel6201/public_html/index.php on line 22
+[21-Jan-2025 14:36:13 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 14:36:13 Europe/Paris] PHP Notice:  Undefined variable: user in /home/thibaultgicquel6201/public_html/index.php on line 22
+[21-Jan-2025 14:36:55 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 14:37:03 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 14:37:03 Europe/Paris] PHP Notice:  Undefined variable: user in /home/thibaultgicquel6201/public_html/index.php on line 22
+[21-Jan-2025 14:37:26 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 14:37:26 Europe/Paris] PHP Notice:  Array to string conversion in /home/thibaultgicquel6201/public_html/index.php on line 21
+[21-Jan-2025 14:37:26 Europe/Paris] PHP Notice:  Undefined variable: user in /home/thibaultgicquel6201/public_html/index.php on line 23
+[21-Jan-2025 14:37:33 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 14:37:33 Europe/Paris] PHP Notice:  Array to string conversion in /home/thibaultgicquel6201/public_html/index.php on line 21
+[21-Jan-2025 14:37:33 Europe/Paris] PHP Notice:  Undefined variable: user in /home/thibaultgicquel6201/public_html/index.php on line 23
+[21-Jan-2025 14:38:27 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 14:38:27 Europe/Paris] PHP Notice:  Array to string conversion in /home/thibaultgicquel6201/public_html/index.php on line 21
+[21-Jan-2025 14:38:27 Europe/Paris] PHP Notice:  Undefined variable: user in /home/thibaultgicquel6201/public_html/index.php on line 23
+[21-Jan-2025 14:39:37 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 14:39:37 Europe/Paris] PHP Notice:  Array to string conversion in /home/thibaultgicquel6201/public_html/index.php on line 21
+[21-Jan-2025 14:39:58 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 14:39:58 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\LoaderError: Unable to find template "dashboard.twig" (looked into: templates). in /home/vendor/twig/twig/src/Loader/FilesystemLoader.php:227
+Stack trace:
+#0 /home/vendor/twig/twig/src/Loader/FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate()
+#1 /home/vendor/twig/twig/src/Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey()
+#2 /home/vendor/twig/twig/src/Environment.php(309): Twig\Environment->getTemplateClass()
+#3 /home/thibaultgicquel6201/public_html/index.php(67): Twig\Environment->load()
+#4 {main}
+  thrown in /home/vendor/twig/twig/src/Loader/FilesystemLoader.php on line 227
+[21-Jan-2025 14:40:04 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 14:40:04 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\LoaderError: Unable to find template "dashboard.twig" (looked into: templates). in /home/vendor/twig/twig/src/Loader/FilesystemLoader.php:227
+Stack trace:
+#0 /home/vendor/twig/twig/src/Loader/FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate()
+#1 /home/vendor/twig/twig/src/Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey()
+#2 /home/vendor/twig/twig/src/Environment.php(309): Twig\Environment->getTemplateClass()
+#3 /home/thibaultgicquel6201/public_html/index.php(67): Twig\Environment->load()
+#4 {main}
+  thrown in /home/vendor/twig/twig/src/Loader/FilesystemLoader.php on line 227
+[21-Jan-2025 14:40:48 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 14:40:56 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 14:40:56 Europe/Paris] PHP Notice:  Array to string conversion in /home/thibaultgicquel6201/public_html/index.php on line 21
+[21-Jan-2025 14:43:26 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 14:43:36 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 14:43:36 Europe/Paris] PHP Notice:  Array to string conversion in /home/thibaultgicquel6201/public_html/index.php on line 21
+[21-Jan-2025 14:43:36 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 14:43:45 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 14:43:45 Europe/Paris] PHP Notice:  Array to string conversion in /home/thibaultgicquel6201/public_html/index.php on line 21
+[21-Jan-2025 14:43:45 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 14:45:21 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 14:45:21 Europe/Paris] PHP Notice:  Array to string conversion in /home/thibaultgicquel6201/public_html/index.php on line 69
+[21-Jan-2025 14:45:30 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 14:45:30 Europe/Paris] PHP Notice:  Array to string conversion in /home/thibaultgicquel6201/public_html/index.php on line 21
+[21-Jan-2025 14:45:30 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 14:45:30 Europe/Paris] PHP Notice:  Array to string conversion in /home/thibaultgicquel6201/public_html/index.php on line 69
+[21-Jan-2025 14:48:22 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 14:48:23 Europe/Paris] PHP Notice:  Array to string conversion in /home/thibaultgicquel6201/public_html/index.php on line 69
+[21-Jan-2025 14:52:13 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 14:52:13 Europe/Paris] PHP Notice:  Array to string conversion in /home/thibaultgicquel6201/public_html/index.php on line 69
+[21-Jan-2025 14:53:00 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 14:53:00 Europe/Paris] PHP Notice:  Array to string conversion in /home/thibaultgicquel6201/public_html/index.php on line 69
+[21-Jan-2025 15:12:54 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 15:12:54 Europe/Paris] PHP Notice:  Array to string conversion in /home/thibaultgicquel6201/public_html/index.php on line 21
+[21-Jan-2025 15:13:06 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 15:13:07 Europe/Paris] PHP Notice:  Array to string conversion in /home/thibaultgicquel6201/public_html/index.php on line 69
+[21-Jan-2025 15:13:18 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 15:13:18 Europe/Paris] PHP Notice:  Array to string conversion in /home/thibaultgicquel6201/public_html/index.php on line 21
+[21-Jan-2025 15:13:50 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 15:13:59 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 15:14:07 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 15:14:07 Europe/Paris] PHP Notice:  Array to string conversion in /home/thibaultgicquel6201/public_html/index.php on line 21
+[21-Jan-2025 15:14:59 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 15:20:13 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 15:20:47 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 15:20:51 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 15:22:22 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 15:22:23 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 15:28:15 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 15:30:35 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 15:30:42 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 15:30:53 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 15:31:04 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 15:31:31 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 15:31:41 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 15:32:56 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 15:33:07 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 15:33:07 Europe/Paris] PHP Notice:  Array to string conversion in /home/thibaultgicquel6201/public_html/index.php on line 21
+[21-Jan-2025 15:33:08 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 15:33:19 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[21-Jan-2025 15:33:19 Europe/Paris] PHP Notice:  Array to string conversion in /home/thibaultgicquel6201/public_html/index.php on line 21
+[21-Jan-2025 15:33:23 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
