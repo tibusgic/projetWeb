@@ -7,7 +7,7 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 // Affichage des informations utilisateur
-echo "Bienvenue, Manager " . htmlspecialchars($_SESSION['user']['prenom']) . " " . htmlspecialchars($_SESSION['user']['nom']) . "!";
+//echo "Bienvenue, Manager " . htmlspecialchars($_SESSION['user']['prenom']) . " " . htmlspecialchars($_SESSION['user']['nom']) . "!";
 
 // Charger et afficher le template
 $template = $twig->load('dashboard.twig');

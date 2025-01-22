@@ -221,3 +221,25 @@ Stack trace:
 #3 /home/thibaultgicquel6201/public_html/php/manager.php(13): Twig\Environment->load()
 #4 {main}
   thrown in /home/vendor/twig/twig/src/Loader/FilesystemLoader.php on line 227
+[22-Jan-2025 23:48:51 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag? in /home/thibaultgicquel6201/public_html/templates/dashboard.twig:2
+Stack trace:
+#0 /home/vendor/twig/twig/src/Parser.php(342): Twig\Parser->filterBodyNodes()
+#1 /home/vendor/twig/twig/src/Parser.php(86): Twig\Parser->filterBodyNodes()
+#2 /home/vendor/twig/twig/src/Environment.php(488): Twig\Parser->parse()
+#3 /home/vendor/twig/twig/src/Environment.php(516): Twig\Environment->parse()
+#4 /home/vendor/twig/twig/src/Environment.php(348): Twig\Environment->compileSource()
+#5 /home/vendor/twig/twig/src/Environment.php(309): Twig\Environment->loadTemplate()
+#6 /home/thibaultgicquel6201/public_html/php/manager.php(13): Twig\Environment->load()
+#7 {main}
+  thrown in /home/thibaultgicquel6201/public_html/templates/dashboard.twig on line 2
+[22-Jan-2025 23:49:07 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag? in /home/thibaultgicquel6201/public_html/templates/dashboard.twig:2
+Stack trace:
+#0 /home/vendor/twig/twig/src/Parser.php(342): Twig\Parser->filterBodyNodes()
+#1 /home/vendor/twig/twig/src/Parser.php(86): Twig\Parser->filterBodyNodes()
+#2 /home/vendor/twig/twig/src/Environment.php(488): Twig\Parser->parse()
+#3 /home/vendor/twig/twig/src/Environment.php(516): Twig\Environment->parse()
+#4 /home/vendor/twig/twig/src/Environment.php(348): Twig\Environment->compileSource()
+#5 /home/vendor/twig/twig/src/Environment.php(309): Twig\Environment->loadTemplate()
+#6 /home/thibaultgicquel6201/public_html/php/manager.php(13): Twig\Environment->load()
+#7 {main}
+  thrown in /home/thibaultgicquel6201/public_html/templates/dashboard.twig on line 2
