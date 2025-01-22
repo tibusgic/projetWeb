@@ -18,7 +18,6 @@ switch($action) {
                 $stmt->bindParam(':password', $_POST['pass']);
                 $stmt->execute();
                 $user = $stmt->fetch(PDO::FETCH_ASSOC);
-                echo $user;
 
                 if ($user) {
                         // Stocker les informations de l'utilisateur dans la session
