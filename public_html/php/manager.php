@@ -1,9 +1,17 @@
 <?php
-session_start();
-echo $_SESSION['user']['status'];
-if (!isset($_SESSION['user']) || $_SESSION['user']['status'] !== 'manager') {
-    header('Location: index.php');
-    exit;
+ini_set('session.cookie_path', '/');
+require_once('../include/config.php');
+
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
 }
-echo "Bienvenue, Manager " . $_SESSION['user']['prenom'] . " " . $_SESSION['user']['nom'] . "!";
-?>
+
+// Affichage des informations utilisateur
+echo "Bienvenue, Manager " . htmlspecialchars($_SESSION['user']['prenom']) . " " . htmlspecialchars($_SESSION['user']['nom']) . "!";
+
+// Charger et afficher le template
+$template = $twig->load('dashboard.twig');
+echo $template->render([
+    'error' => $error ?? null,
+    'user' => $_SESSION['user'] ?? null,
+]);

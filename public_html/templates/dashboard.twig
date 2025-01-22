@@ -1,0 +1,9 @@
+{% extends "layout.twig" %}
+
+{% block sidebar %}
+    {% include 'sidebar.twig' %}
+{% endblock %}
+
+{% block content %}
+    <h1>Welcome {{ user.prenom }}</h1>
+{% endblock %}

@@ -213,3 +213,11 @@ Stack trace:
 [22-Jan-2025 19:17:10 Europe/Paris] PHP Notice:  Array to string conversion in /home/thibaultgicquel6201/public_html/index.php on line 21
 [22-Jan-2025 19:18:57 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
 [22-Jan-2025 19:19:46 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/include/config.php on line 5
+[22-Jan-2025 19:31:14 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\LoaderError: Unable to find template "dashboard.twig" (looked into: /home/thibaultgicquel6201/public_html/include/../templates). in /home/vendor/twig/twig/src/Loader/FilesystemLoader.php:227
+Stack trace:
+#0 /home/vendor/twig/twig/src/Loader/FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate()
+#1 /home/vendor/twig/twig/src/Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey()
+#2 /home/vendor/twig/twig/src/Environment.php(309): Twig\Environment->getTemplateClass()
+#3 /home/thibaultgicquel6201/public_html/php/manager.php(13): Twig\Environment->load()
+#4 {main}
+  thrown in /home/vendor/twig/twig/src/Loader/FilesystemLoader.php on line 227
