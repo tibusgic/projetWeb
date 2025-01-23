@@ -1,0 +1,37 @@
+
+/* Espacement entre les cellules */
+table {
+    border-spacing: 10px; /* Espacement entre les colonnes */
+    width: 100%;
+    border-collapse: separate; /* Assurez-vous que border-spacing fonctionne */
+}
+
+/* Espacement à l'intérieur des cellules */
+th, td {
+    padding: 10px; /* Espacement entre le contenu de la cellule et ses bords */
+    text-align: left; /* Aligner le texte à gauche (optionnel) */
+    border: 1px solid #ddd; /* Bordure légère autour des cellules */
+}
+
+/* Style des entêtes de colonnes */
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+/* Effet zebra : une ligne sur deux plus foncée */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Changer la couleur de la ligne quand la souris survole */
+tr:hover {
+    background-color: #007bff; /* Couleur bleue */
+    color: white; /* Texte en blanc */
+    cursor: pointer; /* Le curseur devient une main pour signaler que c'est cliquable */
+}
+
+/* Optionnel : ajouter une couleur de fond différente pour les lignes non survolées */
+tr:nth-child(odd):not(:hover) {
+    background-color: #ffffff; /* Légère couleur de fond pour les lignes impaires */
+}

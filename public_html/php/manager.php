@@ -14,12 +14,22 @@ if (!isset($_SESSION['user']['id']) || empty($_SESSION['user']['id'])) {
 // Affichage des informations utilisateur
 //echo "Bienvenue, Manager " . htmlspecialchars($_SESSION['user']['prenom']) . " " . htmlspecialchars($_SESSION['user']['nom']) . "!";
 $activePage = $_GET['page'] ?? 'dashboard'; // Par défaut, 'dashboard' est actif
+
+//charger les donnee des membres
+if ($activePage === 'members') {
+    $stmt = $db->prepare('SELECT * FROM person');
+    $stmt->execute();
+    $personList = $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
+
 // Charger et afficher le template
 $template = $twig->load('dashboard.twig');
 echo $template->render([
     'activePage' => $activePage,
     'error' => $error ?? null,
     'user' => $_SESSION['user'] ?? null,
+    'personList' => $personList ?? null,
 ]);
 
 ?>

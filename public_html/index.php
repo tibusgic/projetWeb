@@ -12,7 +12,7 @@ if(isset($_GET['a'])) {
 
 switch($action) {
         case 'form-login':
-                $stmt = $db->prepare('SELECT * FROM person WHERE login = :login AND password = :password');
+                $stmt = $db->prepare('SELECT * FROM person WHERE login = :login AND password = MD5(:password)');
 
                 $stmt->bindParam(':login', $_POST['user']);
                 $stmt->bindParam(':password', $_POST['pass']);

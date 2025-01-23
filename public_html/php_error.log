@@ -449,3 +449,93 @@ Stack trace:
 [23-Jan-2025 20:57:13 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
 [23-Jan-2025 20:57:14 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
 [23-Jan-2025 20:57:23 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:00:40 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:01:33 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:05:49 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:05:49 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\LoaderError: Unable to find template "{{activePage}}.twig" (looked into: /home/thibaultgicquel6201/public_html/include/../templates) in "dashboard.twig" at line 10. in /home/vendor/twig/twig/src/Loader/FilesystemLoader.php:227
+Stack trace:
+#0 /home/vendor/twig/twig/src/Loader/FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate()
+#1 /home/vendor/twig/twig/src/Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey()
+#2 /home/vendor/twig/twig/src/Template.php(319): Twig\Environment->getTemplateClass()
+#3 /home/vendor/twig/twig/src/Environment.php(358) : eval()'d code(69): Twig\Template->loadTemplate()
+#4 /home/vendor/twig/twig/src/Template.php(171): __TwigTemplate_cd2291c79c7fd288b14b23df338f8176822b95cd0ed2186828ed3d2897dc1d4c->block_content()
+#5 /home/vendor/twig/twig/src/Environment.php(358) : eval()'d code(63): Twig\Template->displayBlock()
+#6 /home/vendor/twig/twig/src/Template.php(394): __TwigTemplate_4455887f22b4b441bc3035a409af5d2b61c2e91b24d1821910d08dfc132 in /home/vendor/twig/twig/src/Loader/FilesystemLoader.php on line 227
+[23-Jan-2025 21:09:38 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:09:40 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:09:41 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:09:41 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:09:42 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:09:43 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:09:43 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:09:44 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:09:44 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:09:45 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:09:56 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:10:01 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:10:02 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:10:03 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:10:04 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:10:05 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:10:07 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:10:12 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:10:13 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:10:13 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:10:14 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:10:14 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:10:15 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:15:08 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:15:13 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:15:14 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:15:15 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:15:15 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:15:16 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:15:16 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:15:17 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:15:24 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:15:25 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:15:26 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:24:43 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:24:44 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:25:46 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:28:42 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:28:45 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:28:46 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:28:46 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:33:38 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:35:36 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:35:39 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:35:39 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:36:49 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:37:10 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:50:44 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:51:04 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:51:10 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:51:11 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:51:12 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:59:31 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:59:31 Europe/Paris] PHP Notice:  Undefined variable: activePag in /home/thibaultgicquel6201/public_html/php/manager.php on line 19
+[23-Jan-2025 21:59:33 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:59:33 Europe/Paris] PHP Notice:  Undefined variable: activePag in /home/thibaultgicquel6201/public_html/php/manager.php on line 19
+[23-Jan-2025 21:59:48 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 21:59:48 Europe/Paris] PHP Notice:  Undefined variable: activePag in /home/thibaultgicquel6201/public_html/php/manager.php on line 19
+[23-Jan-2025 22:00:18 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 22:00:18 Europe/Paris] PHP Notice:  Array to string conversion in /home/thibaultgicquel6201/public_html/php/manager.php on line 28
+[23-Jan-2025 22:03:20 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 22:03:27 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 22:06:42 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 22:06:43 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 22:06:44 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 22:08:47 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 22:13:50 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 22:13:55 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 22:15:02 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 22:15:05 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 22:15:35 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 22:16:17 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 22:17:02 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 22:17:04 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 22:17:06 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 22:17:07 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 22:17:21 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[23-Jan-2025 22:17:25 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5

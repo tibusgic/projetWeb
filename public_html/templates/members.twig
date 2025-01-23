@@ -1,0 +1,48 @@
+<div class="page-content page-container" id="page-content">
+    <div class="padding">
+        <div class="row container d-flex justify-content-center">
+            <div class="col-lg-8 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Liste des membres</h4>
+                        <p class="card-description">Tous les membres inscrits sont dans cette liste</p>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Nom</th>
+                                        <th>Prénom</th>
+                                        <th>Email</th>
+                                        <th>Status</th>
+                                        <th>Login</th>
+                                        <th>Date de création</th>
+                                        <th>Téléphone</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for person in personList %}
+                                        <tr onclick="window.location.href='/profile/{{ person.id }}'">
+                                            <td>{{ person.nom }}</td>
+                                            <td>{{ person.prenom }}</td>
+                                            <td>{{ person.email }}</td>
+                                            <td>{{ person.status }}</td>
+                                            <td>{{ person.login }}</td>
+                                            <td>{{ person.date_creation|date("d M Y") }}</td>
+                                            <td>
+                                                {% if person.telephone %}
+                                                    {{ person.telephone }}
+                                                {% else %}
+                                                    <span class="badge badge-warning">Non renseigné</span>
+                                                {% endif %}
+                                            </td>
+                                        </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

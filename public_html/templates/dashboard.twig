@@ -5,6 +5,30 @@
 {% endblock %}
 
 {% block content %}
-    <h1>{{activePage}}</h!>
-    <!--- <h1>Welcome {{ user.prenom }}</h1> -->
+    {% if activePage == 'dashboard' %}
+        <h1>Bienvenue sur le Dashboard</h1>
+        <p>Contenu spécifique au Dashboard.</p>
+    {% elseif activePage == 'members' %}
+        <h1>Gestion des membres</h1>
+        <p>Contenu spécifique à la gestion des membres.</p>
+        {% include 'members.twig' %}
+    {% elseif activePage == 'wines' %}
+        <h1>Liste des vins</h1>
+        <p>Contenu spécifique à la liste des vins.</p>
+    {% elseif activePage == 'orders' %}
+        <h1>Commandes</h1>
+        <p>Contenu spécifique aux commandes.</p>
+    {% elseif activePage == 'sales' %}
+        <h1>Ventes</h1>
+        <p>Contenu spécifique aux ventes.</p>
+    {% elseif activePage == 'stock' %}
+        <h1>Stock</h1>
+        <p>Contenu spécifique au stock.</p>
+    {% elseif activePage == 'settings' %}
+        <h1>Paramètres</h1>
+        <p>Contenu spécifique aux paramètres.</p>
+    {% else %}
+        <h1>Page non trouvée</h1>
+        <p>Le contenu demandé n'existe pas.</p>
+    {% endif %}
 {% endblock %}
