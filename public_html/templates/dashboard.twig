@@ -5,12 +5,12 @@
 {% endblock %}
 
 {% block content %}
+<div class="container" style="padding: 20px;">
     {% if activePage == 'dashboard' %}
         <h1>Bienvenue sur le Dashboard</h1>
         <p>Contenu spécifique au Dashboard.</p>
     {% elseif activePage == 'members' %}
-        <h1>Gestion des membres</h1>
-        <p>Contenu spécifique à la gestion des membres.</p>
+    <h1>Gestionaire des membres !</h1>
         {% include 'members.twig' %}
     {% elseif activePage == 'wines' %}
         <h1>Liste des vins</h1>
@@ -31,4 +31,5 @@
         <h1>Page non trouvée</h1>
         <p>Le contenu demandé n'existe pas.</p>
     {% endif %}
+
 {% endblock %}

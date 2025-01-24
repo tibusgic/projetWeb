@@ -1,0 +1,42 @@
+<div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ajouter un membre</h5>
+                    <form method="post" action="?page=addMember">
+                        <div class="mb-3">
+                            <label for="nom" class="form-label">Nom</label>
+                            <input type="text" class="form-control" id="nom" name="nom" placeholder="Entrez le nom" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="prenom" class="form-label">Prénom</label>
+                            <input type="text" class="form-control" id="prenom" name="prenom" placeholder="Entrez le prénom" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Entrez l'email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="identifiant" class="form-label">Identifiant</label>
+                            <input type="text" class="form-control" id="login" name="login" placeholder="Entrez l'identifiant" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="pass" class="form-label">Mot de Passe</label>
+                            <input type="password" class="form-control" id="pass" name="pass" placeholder="Entrez le mot de passe" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telephone" class="form-label">Téléphone</label>
+                            <input type="text" class="form-control" id="telephone" name="telephone" placeholder="Entrez le numéro de téléphone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="status" class="form-label">Status</label>
+                            <select class="form-select" id="status" name="status" required>
+                                <option value="" disabled selected>Choisissez un statut</option>
+                                <option value="Actif">manager</option>
+                                <option value="Inactif">employee</option>
+                                <option value="Inactif">waiter</option>
+                                <option value="Inactif">other</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Ajouter</button>
+                    </form>
+                </div>
+            </div>

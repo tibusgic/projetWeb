@@ -1,1 +1,14 @@
-{% include 'memberList.twig' %}
+<div class="container-fluid">
+    <div class="row">
+    <!-- Section du formulaire -->
+        <div class="col-md-4 order-md-1">
+             {% include 'newMemberForm.twig' %}
+        </div>
+        <!-- Section de la liste des membres -->
+        <div class="col-md-8 order-md-2">
+            {% include 'memberList.twig' %}
+        </div>
+
+        
+    </div>
+</div>
