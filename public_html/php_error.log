@@ -707,3 +707,5 @@ Stack trace:
 [24-Jan-2025 10:23:29 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
 [24-Jan-2025 10:23:32 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
 [24-Jan-2025 10:23:37 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[24-Jan-2025 10:30:26 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[24-Jan-2025 10:30:45 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5

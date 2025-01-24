@@ -2,7 +2,6 @@
 ini_set('session.cookie_path', '/');
 require_once('../include/config.php');
 
-session_start();
 
 // Vérification de l'état de la session ou des informations de connexion
 if (!isset($_SESSION['user']['id']) || empty($_SESSION['user']['id'])) {
@@ -17,6 +16,7 @@ $activePage = $_GET['page'] ?? 'dashboard'; // Par défaut, 'dashboard' est acti
 
 //charger les donnee des membres
 if ($activePage === 'members') {
+    include('../include/addMember.php');
     $stmt = $db->prepare('SELECT * FROM person');
     $stmt->execute();
     $personList = $stmt->fetchAll(PDO::FETCH_ASSOC);

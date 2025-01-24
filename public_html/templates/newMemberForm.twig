@@ -1,7 +1,7 @@
 <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Ajouter un membre</h5>
-                    <form method="post" action="?page=addMember">
+                    <form method="post" action="?page=members">
                         <div class="mb-3">
                             <label for="nom" class="form-label">Nom</label>
                             <input type="text" class="form-control" id="nom" name="nom" placeholder="Entrez le nom" required>
@@ -29,11 +29,11 @@
                         <div class="mb-3">
                             <label for="status" class="form-label">Status</label>
                             <select class="form-select" id="status" name="status" required>
-                                <option value="" disabled selected>Choisissez un statut</option>
-                                <option value="Actif">manager</option>
-                                <option value="Inactif">employee</option>
-                                <option value="Inactif">waiter</option>
-                                <option value="Inactif">other</option>
+                                <option value="" disabled selected>Choisissez un status</option>
+                                <option value="manager">Manager</option>
+                                <option value="employee">Employee</option>
+                                <option value="waiter">Waiter</option>
+                                <option value="other">Other</option>
                             </select>
                         </div>
                         <button type="submit" class="btn btn-primary">Ajouter</button>
