@@ -16,20 +16,47 @@
                     <ul class="list-inline mb-0 text-muted">
                         <li class="list-inline-item"><i class="mdi mdi-map-marker"></i> {{ winesListElem.region}}, {{ winesListElem.country_of_origin}}</li>
                         <li class="list-inline-item"><i class="mdi mdi-calendar"></i> Millésime : {{ winesListElem.vintage}}</li>
-                        <li class="list-inline-item"><i class="mdi mdi-grape"></i> Cépages : {{ winesListElem.grape_varieties | default('Non spécifié') }}</li>
+
+                        {% if winesListElem.grape_varieties %}
+                            <li class="list-inline-item"><i class="mdi mdi-grape"></i> Cépages : {{ winesListElem.grape_varieties }}</li>
+                        {% endif %}
                     </ul>
                 </div>
             </div>
             <div class="col-lg-4">
                 <div class="mt-2 mt-lg-0 d-flex flex-wrap align-items-start gap-1">
-                    <span class="badge bg-soft-secondary fs-14 mt-1">{{ winesListElem.wine_type }}</span>
-                    <span class="badge bg-soft-secondary fs-14 mt-1">{{ winesListElem.classification | default('Non précisé') }}</span>
-                    <span class="badge bg-soft-secondary fs-14 mt-1">{{ winesListElem.alcohol_content }}% Vol</span>
-                    <span class="badge bg-soft-secondary fs-14 mt-1">Taille : {{ winesListElem.bottle_size }}</span>
-                    <span class="badge bg-soft-secondary fs-14 mt-1">Température de service : {{ winesListElem.serving_temperature | default('Non précisé') }}</span>
-                    <span class="badge bg-soft-secondary fs-14 mt-1">Durée de garde : {{ winesListElem.aging_potential | default('Non précisé') }}</span>
-                    <span class="badge bg-soft-secondary fs-14 mt-1">{{ winesListElem.certifications | default('Aucune certification') }}</span>
+
+                        {% if winesListElem.wine_type %}
+                            <span class="badge bg-soft-secondary fs-14 mt-1">{{ winesListElem.wine_type }}</span>
+                        {% endif %}
+
+
                     
+                        {% if winesListElem.classification %}
+                            <span class="badge bg-soft-secondary fs-14 mt-1">{{ winesListElem.classification }}</span>
+                        {% endif %}
+
+                        {% if winesListElem.alcohol_content %}
+                            <span class="badge bg-soft-secondary fs-14 mt-1">{{ winesListElem.alcohol_content }}% Vol</span>
+                        {% endif %}
+
+                        {% if winesListElem.bottle_size %}
+                            <span class="badge bg-soft-secondary fs-14 mt-1">{{ winesListElem.bottle_size }}</span>
+                        {% endif %}
+
+                        {% if winesListElem.serving_temperature %}
+                            <span class="badge bg-soft-secondary fs-14 mt-1">Température de service : {{ winesListElem.serving_temperature }}</span>
+                        {% endif %}
+
+                        {% if winesListElem.aging_potential %}
+                            <span class="badge bg-soft-secondary fs-14 mt-1">Durée de garde : {{ winesListElem.aging_potential }}</span>
+                        {% endif %}
+
+                        {% if winesListElem.certifications %}
+                            <span class="badge bg-soft-secondary fs-14 mt-1">{{ winesListElem.certifications }}</span>
+                        {% endif %}
+
+                                            
                 </div>
             </div>
         </div>

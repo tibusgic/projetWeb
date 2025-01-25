@@ -18,9 +18,15 @@
                                     <i class="uil uil-map-marker"></i>
                                     <select class="form-select selectForm__inner" id="regionSelect" aria-label="Filtrer par région">
                                         <option value="Bordeaux">Toutes les regions</option>
-                                        <option value="Bordeaux">Bordeaux</option>
-                                        <option value="Bourgogne">Bourgogne</option>
-                                        <option value="Provence">Provence</option>
+                                            {% set displayedRegions = [] %}
+
+                                            {% for winesListElem in winesList %}
+                                                {% if winesListElem.region not in displayedRegions %}
+                                                    <option value="{{ winesListElem.region }}">{{ winesListElem.region }}</option>
+                                                    {% set displayedRegions = displayedRegions | merge([winesListElem.region]) %}
+                                                {% endif %}
+                                            {% endfor %}
+
                                     </select>
                                 </div>
                             </div>
@@ -29,9 +35,14 @@
                                     <i class="uil uil-clipboard-notes"></i>
                                     <select class="form-select selectForm__inner" id="typeSelect" aria-label="Filtrer par type">
                                     <option value="Bordeaux">Tous les types</option>
-                                        <option value="Rouge">Vin Rouge</option>
-                                        <option value="Blanc">Vin Blanc</option>
-                                        <option value="Rosé">Vin Rosé</option>
+                                    {% set displayedType = [] %}
+
+                                    {% for winesListElem in winesList %}
+                                        {% if winesListElem.wine_type not in displayedType %}
+                                            <option value="{{ winesListElem.wine_type }}">{{ winesListElem.wine_type }}</option>
+                                            {% set displayedType = displayedType | merge([winesListElem.wine_type]) %}
+                                        {% endif %}
+                                    {% endfor %}
                                     </select>
                                 </div>
                             </div>
