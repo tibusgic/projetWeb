@@ -2,11 +2,11 @@
 <section id="wine-section" class="section-wine">
     <div class="container-wine">
         <!-- Recherche et filtres -->
-        <div class="justify-content-center row-wine">
+        <div class="justify-content-center row">
             <div class="col-lg-12">
                 <div class="wine-list-widgets mb-4">
                     <form action="#" class="">
-                        <div class="g-2 row-wine">
+                        <div class="g-2 row">
                             <div class="col-lg-3">
                                 <div class="wine-filter-form">
                                     <i class="uil uil-briefcase-alt"></i>
@@ -49,39 +49,8 @@
             <div class="col-lg-12">
                 <div class="wine-list">
                     <!-- Exemple de vin -->
-                    <div class="wine-list-box card mt-4">
-                        <div class="p-4 card-body">
-                            <div class="align-items-center row-wine">
-                                <div class="col-auto">
-                                    <div class="wine-list-images">
-                                        <img src="images/wine1.jpg" alt="Bouteille de vin" class="wine-img-thumbnail" />
-                                    </div>
-                                </div>
-                                <div class="col-lg-5">
-                                    <div class="wine-list-content mt-3 mt-lg-0">
-                                        <h5 class="fs-19 mb-0">
-                                            Château Margaux
-                                        </h5>
-                                        <p class="text-muted mb-2">Appellation : Margaux</p>
-                                        <ul class="list-inline mb-0 text-muted">
-                                            <li class="list-inline-item"><i class="mdi mdi-map-marker"></i> Bordeaux, France</li>
-                                            <li class="list-inline-item"><i class="mdi mdi-calendar"></i> Millésime : 2015</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="mt-2 mt-lg-0 d-flex flex-wrap align-items-start gap-1">
-                                        <span class="badge bg-soft-secondary fs-14 mt-1">Rouge</span>
-                                        <span class="badge bg-soft-secondary fs-14 mt-1">13.5% Vol</span>
-                                        <span class="badge bg-soft-secondary fs-14 mt-1">Grand Cru</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="favorite-icon">
-                                <a href="#"><i class="mdi mdi-heart fs-18"></i></a>
-                            </div>
-                        </div>
-                    </div>
+                     {% include 'wineListElem.twig' %}
+                     {% include 'wineListElem.twig' %}
                     <!-- Fin Exemple de vin -->
                 </div>
             </div>
