@@ -20,7 +20,7 @@
                             </thead>
                             <tbody>
                                 {% for person in personList %}
-                                    <tr onclick="window.location.href='?page=members&profil={{ person.id }}'">
+                                    <tr onclick="openModal('{{ person.nom }}', '{{ person.prenom }}', '{{ person.email }}', '{{ person.status }}', '{{ person.login }}', '{{ person.date_creation|date('d M Y') }}', '{{ person.telephone|default('Non renseigné') }}')">
                                         <td>{{ person.nom }}</td>
                                         <td>{{ person.prenom }}</td>
                                         <td>{{ person.email }}</td>
@@ -44,3 +44,54 @@
         </div>
     </div>
 </div>
+
+<div class="modal fade" id="memberModal" tabindex="-1" role="dialog" aria-labelledby="memberModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="memberModalLabel">Détails du membre</h5>
+            </div>
+            <div class="modal-body">
+                <!-- Contenu dynamique du membre -->
+                <p><strong>Nom:</strong> <span id="modalNom"></span></p>
+                <p><strong>Prénom:</strong> <span id="modalPrenom"></span></p>
+                <p><strong>Email:</strong> <span id="modalEmail"></span></p>
+                <p><strong>Status:</strong> <span id="modalStatus"></span></p>
+                <p><strong>Login:</strong> <span id="modalLogin"></span></p>
+                <p><strong>Date de création:</strong> <span id="modalDate"></span></p>
+                <p><strong>Téléphone:</strong> <span id="modalTelephone"></span></p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" onclick="suprMember()" style="background-color=red;">Suprimer le membre</button>
+                <button type="button" class="btn btn-secondary" onclick="closeModal()">Fermer</button>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+let currentMemberId = null; // Variable globale pour stocker l'ID du membre
+
+function openModal(nom, prenom, email, status, login, date, telephone, memberId) {
+    
+    document.getElementById('modalNom').textContent = nom;
+    document.getElementById('modalPrenom').textContent = prenom;
+    document.getElementById('modalEmail').textContent = email;
+    document.getElementById('modalStatus').textContent = status;
+    document.getElementById('modalLogin').textContent = login;
+    document.getElementById('modalDate').textContent = date;
+    document.getElementById('modalTelephone').textContent = telephone;
+
+    // Stocker l'ID du membre pour la redirection
+    currentMemberId = memberId;
+    // Afficher le modal
+    $('#memberModal').modal('show');
+}
+function closeModal() {
+    $('#memberModal').modal('hide'); // Fermer le modal avec jQuery
+}
+function suprMember() {
+    
+}
+</script>

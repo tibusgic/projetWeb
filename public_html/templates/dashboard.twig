@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block content %}
-<div class="container" style="padding: 20px;">
+<div class="container" style="margin-left: 0em;">
     {% if activePage == 'dashboard' %}
         <h1>Bienvenue sur le Dashboard</h1>
         <p>Contenu spécifique au Dashboard.</p>
@@ -14,7 +14,7 @@
         {% include 'members.twig' %}
     {% elseif activePage == 'wines' %}
         <h1>Liste des vins</h1>
-        <p>Contenu spécifique à la liste des vins.</p>
+        {% include 'wineListe.twig' %}
     {% elseif activePage == 'orders' %}
         <h1>Commandes</h1>
         <p>Contenu spécifique aux commandes.</p>
