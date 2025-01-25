@@ -709,3 +709,15 @@ Stack trace:
 [24-Jan-2025 10:23:37 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
 [24-Jan-2025 10:30:26 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
 [24-Jan-2025 10:30:45 Europe/Paris] PHP Notice:  session_start(): A session had already been started - ignoring in /home/thibaultgicquel6201/public_html/php/manager.php on line 5
+[25-Jan-2025 23:57:26 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unexpected token "punctuation" of value "|" ("name" expected). in /home/thibaultgicquel6201/public_html/templates/wineListElem.twig:19
+Stack trace:
+#0 /home/vendor/twig/twig/src/ExpressionParser.php(551): Twig\TokenStream->expect()
+#1 /home/vendor/twig/twig/src/ExpressionParser.php(545): Twig\ExpressionParser->parseFilterExpressionRaw()
+#2 /home/vendor/twig/twig/src/ExpressionParser.php(403): Twig\ExpressionParser->parseFilterExpression()
+#3 /home/vendor/twig/twig/src/ExpressionParser.php(286): Twig\ExpressionParser->parsePostfixExpression()
+#4 /home/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#5 /home/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#6 /home/vendor/twig/twig/src/Parser.php(128): Twig\ExpressionParser->parseExpression()
+#7 /home/vendor/twig/twig/src/Parser.php(84): Twig\Parser->subparse()
+#8 /home/vendor/twig/twig/src/Environment.php(488): Twig\Parser->parse()
+#9 /home/vendor in /home/thibaultgicquel6201/public_html/templates/wineListElem.twig on line 19

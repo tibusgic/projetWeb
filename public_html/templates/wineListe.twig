@@ -17,6 +17,7 @@
                                 <div class="wine-filter-form">
                                     <i class="uil uil-map-marker"></i>
                                     <select class="form-select selectForm__inner" id="regionSelect" aria-label="Filtrer par région">
+                                        <option value="Bordeaux">Toutes les regions</option>
                                         <option value="Bordeaux">Bordeaux</option>
                                         <option value="Bourgogne">Bourgogne</option>
                                         <option value="Provence">Provence</option>
@@ -27,6 +28,7 @@
                                 <div class="wine-filter-form">
                                     <i class="uil uil-clipboard-notes"></i>
                                     <select class="form-select selectForm__inner" id="typeSelect" aria-label="Filtrer par type">
+                                    <option value="Bordeaux">Tous les types</option>
                                         <option value="Rouge">Vin Rouge</option>
                                         <option value="Blanc">Vin Blanc</option>
                                         <option value="Rosé">Vin Rosé</option>
@@ -35,7 +37,12 @@
                             </div>
                             <div class="col-lg-3">
                                 <div>
-                                    <button class="btn btn-primary" type="submit"><i class="uil uil-filter"></i> Filtrer</button>
+
+                                    <button class="btn btn-primary" type="submit"><i class="uil uil-filter"></i> 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                                    </svg>Filtrer</button>
+
                                     <button class="btn btn-success ms-2" type="button"><i class="uil uil-cog"></i> Avancé</button>
                                 </div>
                             </div>
@@ -49,8 +56,13 @@
             <div class="col-lg-12">
                 <div class="wine-list">
                     <!-- Exemple de vin -->
-                     {% include 'wineListElem.twig' %}
-                     {% include 'wineListElem.twig' %}
+
+
+                     {% for winesListElem in winesList %}
+
+                        {% include 'wineListElem.twig' %}
+
+                     {% endfor %}
                     <!-- Fin Exemple de vin -->
                 </div>
             </div>

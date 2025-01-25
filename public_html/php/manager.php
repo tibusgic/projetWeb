@@ -21,6 +21,9 @@ if ($activePage === 'members') {
     $stmt->execute();
     $personList = $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
+elseif($activePage === 'wines'){
+    include('../include/getAllWines.php');
+}
 
 
 // Charger et afficher le template
@@ -30,6 +33,7 @@ echo $template->render([
     'error' => $error ?? null,
     'user' => $_SESSION['user'] ?? null,
     'personList' => $personList ?? null,
+    'winesList' => $winesList ?? null,
 ]);
 
 ?>

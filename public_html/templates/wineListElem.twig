@@ -4,26 +4,31 @@
         <div class="align-items-center row">
             <div class="col-auto">
                 <div class="list-images">
-                    <img src="https://devbox.u-angers.fr/~thibaultgicquel6201/img/wines/red-wine-bottle-png.webp" alt="Bouteille de vin" class="avatar-md img-thumbnail rounded-circle" />
+                    <img src="https://devbox.u-angers.fr/~thibaultgicquel6201/img/wines/{{ winesListElem.path_img}}" alt="Bouteille de vin" class="avatar-md img-thumbnail rounded-circle" />
                 </div>
             </div>
             <div class="col-lg-5">
                 <div class="list-content mt-3 mt-lg-0">
                     <h5 class="fs-19 mb-0">
-                        Château Margaux
+                        {{ winesListElem.domaine_name}}
                     </h5>
-                    <p class="text-muted mb-2">Appellation : Margaux</p>
+                    <p class="text-muted mb-2">Appellation : {{ winesListElem.appellation}}</p>
                     <ul class="list-inline mb-0 text-muted">
-                        <li class="list-inline-item"><i class="mdi mdi-map-marker"></i> Bordeaux, France</li>
-                        <li class="list-inline-item"><i class="mdi mdi-calendar"></i> Millésime : 2015</li>
+                        <li class="list-inline-item"><i class="mdi mdi-map-marker"></i> {{ winesListElem.region}}, {{ winesListElem.country_of_origin}}</li>
+                        <li class="list-inline-item"><i class="mdi mdi-calendar"></i> Millésime : {{ winesListElem.vintage}}</li>
+                        <li class="list-inline-item"><i class="mdi mdi-grape"></i> Cépages : {{ winesListElem.grape_varieties | default('Non spécifié') }}</li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-4">
                 <div class="mt-2 mt-lg-0 d-flex flex-wrap align-items-start gap-1">
-                    <span class="badge bg-soft-secondary fs-14 mt-1">Rouge</span>
-                    <span class="badge bg-soft-secondary fs-14 mt-1">Grand Cru</span>
-                    <span class="badge bg-soft-secondary fs-14 mt-1">13.5% Vol</span>
+                    <span class="badge bg-soft-secondary fs-14 mt-1">{{ winesListElem.wine_type }}</span>
+                    <span class="badge bg-soft-secondary fs-14 mt-1">{{ winesListElem.classification | default('Non précisé') }}</span>
+                    <span class="badge bg-soft-secondary fs-14 mt-1">{{ winesListElem.alcohol_content }}% Vol</span>
+                    <span class="badge bg-soft-secondary fs-14 mt-1">Taille : {{ winesListElem.bottle_size }}</span>
+                    <span class="badge bg-soft-secondary fs-14 mt-1">Température de service : {{ winesListElem.serving_temperature | default('Non précisé') }}</span>
+                    <span class="badge bg-soft-secondary fs-14 mt-1">Durée de garde : {{ winesListElem.aging_potential | default('Non précisé') }}</span>
+                    <span class="badge bg-soft-secondary fs-14 mt-1">{{ winesListElem.certifications | default('Aucune certification') }}</span>
                     
                 </div>
             </div>
