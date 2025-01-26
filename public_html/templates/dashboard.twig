@@ -1,5 +1,7 @@
 {% extends "layout.twig" %}
 
+{% block title %}{{user.nom}} {{user.prenom}} - {{activePage}}{% endblock %}
+
 {% block sidebar %}
     {% include 'sidebar.twig' %}
 {% endblock %}
