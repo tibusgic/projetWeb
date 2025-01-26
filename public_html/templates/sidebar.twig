@@ -54,12 +54,14 @@
             </a>
         </li>
         <!-- Gestion des membres -->
+        {% if user.status == "manager"%}
         <li>
             <a href="?page=members" class="nav-link {{ activePage == 'members' ? 'active' : 'text-dark' }}">
                 <svg class="bi me-2" width="16" height="16"><use xlink:href="#people"></use></svg>
                 Gestion des membres
             </a>
         </li>
+        {% endif %}
         <!-- Liste des vins -->
         <li>
             <a href="?page=wines" class="nav-link  {{ activePage == 'wines' ? 'active' : 'text-dark' }}">
@@ -68,26 +70,32 @@
             </a>
         </li>
         <!-- Commandes -->
+        {% if user.status == "manager" or user.status == "employee"%}
         <li>
             <a href="?page=orders" class="nav-link  {{ activePage == 'orders' ? 'active' : 'text-dark' }}">
                 <svg class="bi me-2" width="16" height="16"><use xlink:href="#cart"></use></svg>
                 Commandes
             </a>
         </li>
+        {% endif %}
         <!-- Ventes -->
+        {% if user.status == "manager" or user.status == "waiter"%}
         <li>
             <a href="?page=sales" class="nav-link  {{ activePage == 'sales' ? 'active' : 'text-dark' }}">
                 <svg class="bi me-2" width="16" height="16"><use xlink:href="#graph-up"></use></svg>
                 Ventes
             </a>
         </li>
+        {% endif %}
         <!-- Stock -->
+        {% if user.status == "manager"  or user.status == "employee"%}
         <li>
             <a href="?page=stock" class="nav-link  {{ activePage == 'stock' ? 'active' : 'text-dark' }}">
                 <svg class="bi me-2" width="16" height="16"><use xlink:href="#box"></use></svg>
                 Stock
             </a>
         </li>
+        {% endif %}
         <!-- Paramètres -->
         <li>
             <a href="?page=settings" class="nav-link  {{ activePage == 'settings' ? 'active' : 'text-dark' }}">

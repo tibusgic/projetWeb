@@ -34,10 +34,10 @@ switch($action) {
                                 header('Location: php/manager.php');
                                 break;
                             case 'waiter':
-                                header('Location: php/waiter.php');
+                                header('Location: php/manager.php');
                                 break;
                             case 'employee':
-                                header('Location: php/employee.php');
+                                header('Location: php/manager.php');
                                 break;
                             default:
                                 header('Location: https://devbox.u-angers.fr/~thibaultgicquel6201/'); // Si le statut n'est pas reconnu
