@@ -744,3 +744,7 @@ Stack trace:
 #6 /home/vendor/twig/twig/src/Environment.php(488): Twig\Parser->parse()
 #7 /home/vendor/twig/twig/src/Environment.php(516): Twig\Environment->parse()
 #8 /home/vendor/twig/twig/src/Environment.php(348): Twig\Environment->comp in /home/thibaultgicquel6201/public_html/templates/wineListElem.twig on line 64
+[26-Jan-2025 01:15:04 Europe/Paris] PHP Fatal error:  Uncaught Error: Object of class PDOStatement could not be converted to string in /home/thibaultgicquel6201/public_html/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/thibaultgicquel6201/public_html/index.php on line 15

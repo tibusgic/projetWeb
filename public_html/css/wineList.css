@@ -1,3 +1,10 @@
+.list-box.card.mt-4:hover {
+    background-color: #c2dffd; /* Couleur bleue */
+    color: black; /* Texte en blanc */
+    cursor: pointer; /* Le curseur devient une main pour signaler que c'est cliquable */
+}
+
+
 /* Section globale pour éviter les conflits */
 #wine-section-body {
     padding-top: 40px;
