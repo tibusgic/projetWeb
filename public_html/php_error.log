@@ -721,3 +721,26 @@ Stack trace:
 #7 /home/vendor/twig/twig/src/Parser.php(84): Twig\Parser->subparse()
 #8 /home/vendor/twig/twig/src/Environment.php(488): Twig\Parser->parse()
 #9 /home/vendor in /home/thibaultgicquel6201/public_html/templates/wineListElem.twig on line 19
+[26-Jan-2025 00:58:09 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unexpected character "$". in /home/thibaultgicquel6201/public_html/templates/wineListElem.twig:64
+Stack trace:
+#0 /home/vendor/twig/twig/src/Lexer.php(279): Twig\Lexer->lexExpression()
+#1 /home/vendor/twig/twig/src/Lexer.php(180): Twig\Lexer->lexBlock()
+#2 /home/vendor/twig/twig/src/Environment.php(469): Twig\Lexer->tokenize()
+#3 /home/vendor/twig/twig/src/Environment.php(516): Twig\Environment->tokenize()
+#4 /home/vendor/twig/twig/src/Environment.php(348): Twig\Environment->compileSource()
+#5 /home/vendor/twig/twig/src/Template.php(322): Twig\Environment->loadTemplate()
+#6 /home/vendor/twig/twig/src/Environment.php(358) : eval()'d code(178): Twig\Template->loadTemplate()
+#7 /home/vendor/twig/twig/src/Template.php(394): __TwigTemplate_aac2b7910d86aedc8d28c49a64042ba1b6c8118c630b85fc7226b8679287294f->doDisplay()
+#8 /home/vendor/twig/twig/src/Template.php(367): Twig\Template->displayWithErrorHandling()
+#9 /home/vendor/twig/twig/src/Environment.php(358) : eval()'d code(82): Twig\ in /home/thibaultgicquel6201/public_html/templates/wineListElem.twig on line 64
+[26-Jan-2025 00:58:43 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /home/thibaultgicquel6201/public_html/templates/wineListElem.twig:64
+Stack trace:
+#0 /home/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /home/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /home/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /home/vendor/twig/twig/src/TokenParser/IfTokenParser.php(38): Twig\ExpressionParser->parseExpression()
+#4 /home/vendor/twig/twig/src/Parser.php(171): Twig\TokenParser\IfTokenParser->parse()
+#5 /home/vendor/twig/twig/src/Parser.php(84): Twig\Parser->subparse()
+#6 /home/vendor/twig/twig/src/Environment.php(488): Twig\Parser->parse()
+#7 /home/vendor/twig/twig/src/Environment.php(516): Twig\Environment->parse()
+#8 /home/vendor/twig/twig/src/Environment.php(348): Twig\Environment->comp in /home/thibaultgicquel6201/public_html/templates/wineListElem.twig on line 64
