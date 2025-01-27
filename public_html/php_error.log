@@ -748,3 +748,55 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /home/thibaultgicquel6201/public_html/index.php on line 15
+[27-Jan-2025 17:38:58 Europe/Berlin] PHP Warning:  require_once(include/config.php): failed to open stream: No such file or directory in /home/thibaultgicquel6201/public_html/include/suprMember.php on line 2
+[27-Jan-2025 17:38:58 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'include/config.php' (include_path='.:/usr/share/php') in /home/thibaultgicquel6201/public_html/include/suprMember.php on line 2
+[27-Jan-2025 17:39:45 Europe/Berlin] PHP Notice:  Undefined variable: db in /home/thibaultgicquel6201/public_html/include/suprMember.php on line 4
+[27-Jan-2025 17:39:45 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/thibaultgicquel6201/public_html/include/suprMember.php:4
+Stack trace:
+#0 /home/thibaultgicquel6201/public_html/include/suprMember.php(12): maFonctionPHP()
+#1 {main}
+  thrown in /home/thibaultgicquel6201/public_html/include/suprMember.php on line 4
+[27-Jan-2025 17:41:31 Europe/Berlin] PHP Notice:  Undefined variable: db in /home/thibaultgicquel6201/public_html/include/suprMember.php on line 4
+[27-Jan-2025 17:41:31 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/thibaultgicquel6201/public_html/include/suprMember.php:4
+Stack trace:
+#0 /home/thibaultgicquel6201/public_html/include/suprMember.php(12): maFonctionPHP()
+#1 {main}
+  thrown in /home/thibaultgicquel6201/public_html/include/suprMember.php on line 4
+[27-Jan-2025 17:42:40 Europe/Berlin] PHP Notice:  Undefined variable: db in /home/thibaultgicquel6201/public_html/include/suprMember.php on line 4
+[27-Jan-2025 17:42:40 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/thibaultgicquel6201/public_html/include/suprMember.php:4
+Stack trace:
+#0 /home/thibaultgicquel6201/public_html/include/suprMember.php(12): maFonctionPHP()
+#1 {main}
+  thrown in /home/thibaultgicquel6201/public_html/include/suprMember.php on line 4
+[27-Jan-2025 17:44:03 Europe/Berlin] PHP Notice:  Undefined variable: db in /home/thibaultgicquel6201/public_html/include/suprMember.php on line 4
+[27-Jan-2025 17:44:03 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/thibaultgicquel6201/public_html/include/suprMember.php:4
+Stack trace:
+#0 /home/thibaultgicquel6201/public_html/include/suprMember.php(13): maFonctionPHP()
+#1 {main}
+  thrown in /home/thibaultgicquel6201/public_html/include/suprMember.php on line 4
+[27-Jan-2025 17:45:02 Europe/Berlin] PHP Notice:  Undefined variable: db in /home/thibaultgicquel6201/public_html/include/suprMember.php on line 4
+[27-Jan-2025 17:45:02 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/thibaultgicquel6201/public_html/include/suprMember.php:4
+Stack trace:
+#0 /home/thibaultgicquel6201/public_html/include/suprMember.php(13): maFonctionPHP()
+#1 {main}
+  thrown in /home/thibaultgicquel6201/public_html/include/suprMember.php on line 4
+[27-Jan-2025 17:47:52 Europe/Berlin] PHP Notice:  Undefined variable: db in /home/thibaultgicquel6201/public_html/include/suprMember.php on line 4
+[27-Jan-2025 17:47:52 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/thibaultgicquel6201/public_html/include/suprMember.php:4
+Stack trace:
+#0 /home/thibaultgicquel6201/public_html/include/suprMember.php(13): maFonctionPHP()
+#1 {main}
+  thrown in /home/thibaultgicquel6201/public_html/include/suprMember.php on line 4
+[27-Jan-2025 17:48:46 Europe/Paris] PHP Notice:  Undefined variable: db in /home/thibaultgicquel6201/public_html/include/suprMember.php on line 5
+[27-Jan-2025 17:48:46 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/thibaultgicquel6201/public_html/include/suprMember.php:5
+Stack trace:
+#0 /home/thibaultgicquel6201/public_html/include/suprMember.php(14): maFonctionPHP()
+#1 {main}
+  thrown in /home/thibaultgicquel6201/public_html/include/suprMember.php on line 5
+[27-Jan-2025 17:50:13 Europe/Paris] PHP Notice:  Undefined variable: db in /home/thibaultgicquel6201/public_html/include/suprMember.php on line 5
+[27-Jan-2025 17:50:13 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/thibaultgicquel6201/public_html/include/suprMember.php:5
+Stack trace:
+#0 /home/thibaultgicquel6201/public_html/include/suprMember.php(14): maFonctionPHP()
+#1 {main}
+  thrown in /home/thibaultgicquel6201/public_html/include/suprMember.php on line 5
+[27-Jan-2025 17:51:53 Europe/Paris] PHP Warning:  Use of undefined constant person - assumed 'person' (this will throw an Error in a future version of PHP) in /home/thibaultgicquel6201/public_html/include/suprMember.php on line 10
+[27-Jan-2025 17:54:35 Europe/Paris] PHP Notice:  Array to string conversion in /home/thibaultgicquel6201/public_html/include/suprMember.php on line 9

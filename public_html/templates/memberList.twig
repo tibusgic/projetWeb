@@ -20,7 +20,7 @@
                             </thead>
                             <tbody>
                                 {% for person in personList %}
-                                    <tr onclick="openModal('{{ person.nom }}', '{{ person.prenom }}', '{{ person.email }}', '{{ person.status }}', '{{ person.login }}', '{{ person.date_creation|date('d M Y') }}', '{{ person.telephone|default('Non renseigné') }}')">
+                                    <tr onclick="openModal('{{ person.nom }}', '{{ person.prenom }}', '{{ person.email }}', '{{ person.status }}', '{{ person.login }}', '{{ person.date_creation|date('d M Y') }}', '{{ person.telephone|default('Non renseigné') }}', '{{ person.id }}')">
                                         <td>{{ person.nom }}</td>
                                         <td>{{ person.prenom }}</td>
                                         <td>{{ person.email }}</td>
@@ -62,8 +62,26 @@
                 <p><strong>Téléphone:</strong> <span id="modalTelephone"></span></p>
             </div>
             <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" onclick="suprMember()" style="background-color=red;">Suprimer le membre</button>
+            <button type="button" class="btn btn-danger" onclick="suprMember(currentMemberId)" style="background-color=red;">Suprimer le membre</button>
                 <button type="button" class="btn btn-secondary" onclick="closeModal()">Fermer</button>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="memberSupr" tabindex="-1" role="dialog" aria-labelledby="memberModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="memberModalLabel">Membre Suprimé</h5>
+            </div>
+            <div class="modal-body">
+                <p><strong><span id="resultat"></span></strong></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" onclick="reloadPage()">Fermer</button>
                 
             </div>
         </div>
@@ -90,8 +108,37 @@ function openModal(nom, prenom, email, status, login, date, telephone, memberId)
 }
 function closeModal() {
     $('#memberModal').modal('hide'); // Fermer le modal avec jQuery
+    $('#memberSupr').modal('hide');
 }
-function suprMember() {
-    
+function suprMember(memberId) {
+    console.log(memberId);
+    const data = { id: memberId };
+    fetch('https://devbox.u-angers.fr/~thibaultgicquel6201/include/suprMember.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => response.json()) 
+    .then(data => {
+        if (data.message) {
+            // Si `message` est un objet ou un tableau, le convertir en texte lisible
+            const resultat = typeof data.message === 'object'
+                ? JSON.stringify(data.message, null, 2) // Convertir en JSON formaté
+                : data.message;
+
+            document.getElementById('resultat').innerText = resultat;
+        } else {
+            document.getElementById('resultat').innerText = 'Aucune donnée trouvée.';
+        }
+    })
+    .catch(error => console.error('Erreur:', error));
+    $('#memberModal').modal('hide');
+    $('#memberSupr').modal('show');
+}
+
+function reloadPage() {
+    location.reload();
 }
 </script>

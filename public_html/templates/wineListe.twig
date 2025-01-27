@@ -17,15 +17,15 @@
                                 <div class="wine-filter-form">
                                     <i class="uil uil-map-marker"></i>
                                     <select class="form-select selectForm__inner" id="regionSelect" aria-label="Filtrer par région">
-                                        <option value="Bordeaux">Toutes les regions</option>
-                                            {% set displayedRegions = [] %}
+                                        <option value="Toutes les regions">Toutes les regions</option>
+                                        {% set displayedRegions = [] %}
 
-                                            {% for winesListElem in winesList %}
-                                                {% if winesListElem.region not in displayedRegions %}
-                                                    <option value="{{ winesListElem.region }}">{{ winesListElem.region }}</option>
-                                                    {% set displayedRegions = displayedRegions | merge([winesListElem.region]) %}
-                                                {% endif %}
-                                            {% endfor %}
+                                        {% for winesListElem in winesList %}
+                                            {% if winesListElem.region not in displayedRegions %}
+                                                <option value="{{ winesListElem.region }}">{{ winesListElem.region }}</option>
+                                                {% set displayedRegions = displayedRegions | merge([winesListElem.region]) %}
+                                            {% endif %}
+                                        {% endfor %}
 
                                     </select>
                                 </div>
@@ -34,7 +34,7 @@
                                 <div class="wine-filter-form">
                                     <i class="uil uil-clipboard-notes"></i>
                                     <select class="form-select selectForm__inner" id="typeSelect" aria-label="Filtrer par type">
-                                    <option value="Bordeaux">Tous les types</option>
+                                    <option value="Tous les types">Tous les types</option>
                                     {% set displayedType = [] %}
 
                                     {% for winesListElem in winesList %}
@@ -49,10 +49,10 @@
                             <div class="col-lg-3">
                                 <div>
 
-                                    <button class="btn btn-primary" type="submit"><i class="uil uil-filter"></i> 
+                                    <button class="btn btn-primary" type="button" onclick="filterResults()" ><i class="uil uil-filter"></i> 
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                                    </svg>Filtrer</button>
+                                    </svg> Filtrer</button>
 
                                     <button class="btn btn-success ms-2" type="button"><i class="uil uil-cog"></i> Avancé</button>
                                 </div>
@@ -96,4 +96,83 @@
             </div>
         </div>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const searchInput = document.getElementById("wineSearchInput");
+            const regionSelect = document.getElementById("regionSelect");
+            const typeSelect = document.getElementById("typeSelect");
+            const wineItems = document.querySelectorAll(".wine-item");
+
+            function updateDropdowns() {
+                // Collect all visible wines
+                const visibleWineItems = Array.from(wineItems).filter(item => item.style.display !== "none");
+
+                // Count occurrences of regions and types
+                const regionCounts = {};
+                const typeCounts = {};
+
+                visibleWineItems.forEach(item => {
+                    const region = item.getAttribute("data-region");
+                    const type = item.getAttribute("data-type");
+
+                    if (region) regionCounts[region] = (regionCounts[region] || 0) + 1;
+                    if (type) typeCounts[type] = (typeCounts[type] || 0) + 1;
+                });
+
+                // Preserve current selections
+                const currentRegion = regionSelect.value;
+                const currentType = typeSelect.value;
+
+                // Sort and update region dropdown
+                const sortedRegions = Object.keys(regionCounts).sort();
+                regionSelect.innerHTML = `<option value="Toutes les regions">Toutes les régions</option>`;
+                sortedRegions.forEach(region => {
+                    const isSelected = region === currentRegion ? "selected" : "";
+                    regionSelect.innerHTML += `<option value="${region}" ${isSelected}>${region} (${regionCounts[region]})</option>`;
+                });
+
+                // Sort and update type dropdown
+                const sortedTypes = Object.keys(typeCounts).sort();
+                typeSelect.innerHTML = `<option value="Tous les types">Tous les types</option>`;
+                sortedTypes.forEach(type => {
+                    const isSelected = type === currentType ? "selected" : "";
+                    typeSelect.innerHTML += `<option value="${type}" ${isSelected}>${type} (${typeCounts[type]})</option>`;
+                });
+            }
+
+            function filterWines() {
+                const searchQuery = searchInput.value.toLowerCase();
+                const selectedRegion = regionSelect.value;
+                const selectedType = typeSelect.value;
+
+                wineItems.forEach(item => {
+                    const appellation = item.getAttribute("data-appellation").toLowerCase();
+                    const name = item.getAttribute("data-name").toLowerCase();
+                    const region = item.getAttribute("data-region");
+                    const type = item.getAttribute("data-type");
+
+                    const matchesSearch = name.includes(searchQuery) || appellation.includes(searchQuery);
+                    const matchesRegion = selectedRegion === "Toutes les regions" || region === selectedRegion;
+                    const matchesType = selectedType === "Tous les types" || type === selectedType;
+
+                    if (matchesSearch && matchesRegion && matchesType) {
+                        item.style.display = "";
+                    } else {
+                        item.style.display = "none";
+                    }
+                });
+
+                // Update dropdowns after filtering
+                updateDropdowns();
+            }
+
+            // Attach event listeners
+            searchInput.addEventListener("input", filterWines);
+            regionSelect.addEventListener("change", filterWines);
+            typeSelect.addEventListener("change", filterWines);
+
+            // Initialize dropdowns on page load
+            updateDropdowns();
+        });
+    </script>
 </section>
