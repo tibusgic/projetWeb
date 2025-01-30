@@ -63,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $data['cork_type'] ?? null,
         $data['serving_temperature'] ?? null,
         $data['aging_potential'] ?? null,
-        $data['path_img'] ?? null
+        $data['path_img'] ?? null,
     );
 
     echo json_encode(['message' => $response]);

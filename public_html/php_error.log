@@ -800,3 +800,6 @@ Stack trace:
   thrown in /home/thibaultgicquel6201/public_html/include/suprMember.php on line 5
 [27-Jan-2025 17:51:53 Europe/Paris] PHP Warning:  Use of undefined constant person - assumed 'person' (this will throw an Error in a future version of PHP) in /home/thibaultgicquel6201/public_html/include/suprMember.php on line 10
 [27-Jan-2025 17:54:35 Europe/Paris] PHP Notice:  Array to string conversion in /home/thibaultgicquel6201/public_html/include/suprMember.php on line 9
+[30-Jan-2025 09:08:27 Europe/Paris] PHP Notice:  Trying to access array offset on value of type null in /home/thibaultgicquel6201/public_html/include/modifWine.php on line 51
+[30-Jan-2025 09:40:38 Europe/Paris] PHP Notice:  Trying to access array offset on value of type null in /home/thibaultgicquel6201/public_html/include/modifWine.php on line 51
+[30-Jan-2025 09:42:06 Europe/Paris] PHP Notice:  Trying to access array offset on value of type null in /home/thibaultgicquel6201/public_html/include/modifWine.php on line 51
