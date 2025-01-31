@@ -7,7 +7,10 @@ if(isset($_SESSION['user'])) {
 }
 if(isset($_GET['a'])) {
         $action = $_GET['a'];
-}
+}   
+
+
+
 
 switch($action) {
         case 'form-login':
@@ -28,20 +31,7 @@ switch($action) {
                         ];
 
             
-                        // Redirection en fonction du statut
-                        switch ($user['status']) {
-                            case 'manager':
-                                header('Location: php/manager.php');
-                                break;
-                            case 'waiter':
-                                header('Location: php/manager.php');
-                                break;
-                            case 'employee':
-                                header('Location: php/manager.php');
-                                break;
-                            default:
-                                header('Location: https://devbox.u-angers.fr/~thibaultgicquel6201/'); // Si le statut n'est pas reconnu
-                        }
+                        header('Location: php/get2fa.php');
                         exit;
                     } else {
                         // Retourner à la page de connexion en cas d'erreur
@@ -67,4 +57,3 @@ echo $template->render([
     'error' => $error ?? null,
     'user' => $_SESSION['user'] ?? null,
 ]);
-

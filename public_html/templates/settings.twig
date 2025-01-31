@@ -1,0 +1,48 @@
+<section class="container mt-4">
+    <h2 class="mb-3">Authentification à deux facteurs (2FA)</h2>
+
+    <form method="post" action="https://devbox.u-angers.fr/~thibaultgicquel6201/php/manager.php?page=settings">
+        <div class="alert alert-{% if Info2fa.isActive %}success{% else %}danger{% endif %}">
+            <strong>Statut actuel :</strong> 
+            {% if Info2fa.isActive %}
+                <span>Activé ✅</span>
+            {% else %}
+                <span>Désactivé ❌</span>
+            {% endif %}
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="enable_2fa" value="1" id="enable2fa" 
+                   {% if Info2fa.isActive %}checked{% endif %} onchange="toggle2FA(true)">
+            <label class="form-check-label" for="enable2fa">
+                Activer 2FA
+            </label>
+        </div>
+
+        <div class="form-check mb-3">
+            <input class="form-check-input" type="radio" name="enable_2fa" value="0" id="disable2fa" 
+                   {% if not Info2fa.isActive %}checked{% endif %} onchange="toggle2FA(false)">
+            <label class="form-check-label" for="disable2fa">
+                Désactiver 2FA
+            </label>
+        </div>
+
+        {% if Info2fa.isActive %}
+            <div class="text-center mt-3 qrcode-container">
+                <p>Scannez ce QR Code avec votre application d'authentification :</p>
+                <img src="{{ Info2fa.qr_code_url }}" alt="QR Code 2FA" class="img-fluid border p-2 rounded">
+            </div>
+        {% endif %}
+
+        <button type="submit" class="btn btn-primary mt-3 w-100">Enregistrer</button>
+    </form>
+</section>
+
+<script>
+    function toggle2FA(isEnabled) {
+        const qrContainer = document.querySelector('.qrcode-container');
+        if (qrContainer) {
+            qrContainer.style.display = isEnabled ? 'block' : 'none';
+        }
+    }
+</script>

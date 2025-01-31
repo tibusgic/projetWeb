@@ -29,6 +29,7 @@
     {% elseif activePage == 'settings' %}
         <h1>Paramètres</h1>
         <p>Contenu spécifique aux paramètres.</p>
+        {% include 'settings.twig' %}
     {% else %}
         <h1>Page non trouvée</h1>
         <p>Le contenu demandé n'existe pas.</p>

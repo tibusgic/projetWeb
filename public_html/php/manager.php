@@ -24,7 +24,9 @@ if ($activePage === 'members') {
 elseif($activePage === 'wines'){
     include('../include/getAllWines.php');
 }
-
+elseif($activePage === 'settings'){
+    include('../include/settings.php');
+}
 
 // Charger et afficher le template
 $template = $twig->load('dashboard.twig');
@@ -34,6 +36,7 @@ echo $template->render([
     'user' => $_SESSION['user'] ?? null,
     'personList' => $personList ?? null,
     'winesList' => $winesList ?? null,
+    'Info2fa' => $Info2fa ?? null,
 ]);
 
 ?>
