@@ -53,3 +53,4 @@ Stack trace:
 [31-Jan-2025 23:35:35 Europe/Paris] PHP Notice:  Undefined variable: userId in /home/thibaultgicquel6201/public_html/include/settings.php on line 29
 [31-Jan-2025 23:35:46 Europe/Paris] PHP Notice:  Undefined variable: userId in /home/thibaultgicquel6201/public_html/include/settings.php on line 26
 [31-Jan-2025 23:35:46 Europe/Paris] PHP Notice:  Undefined variable: userId in /home/thibaultgicquel6201/public_html/include/settings.php on line 29
+[01-Feb-2025 00:19:40 Europe/Paris] PHP Warning:  Use of undefined constant coucou - assumed 'coucou' (this will throw an Error in a future version of PHP) in /home/thibaultgicquel6201/public_html/include/settings.php on line 45

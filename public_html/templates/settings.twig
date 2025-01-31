@@ -1,7 +1,7 @@
 <section class="container mt-4">
     <h2 class="mb-3">Authentification à deux facteurs (2FA)</h2>
 
-    <form method="post" action="https://devbox.u-angers.fr/~thibaultgicquel6201/php/manager.php?page=settings">
+    <form method="post" action="">
         <div class="alert alert-{% if Info2fa.isActive %}success{% else %}danger{% endif %}">
             <strong>Statut actuel :</strong> 
             {% if Info2fa.isActive %}

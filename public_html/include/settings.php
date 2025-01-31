@@ -1,6 +1,6 @@
 <?php
 function getInfo2fa($db, $userId){
-    $stmt = $db->prepare('SELECT * FROM google_auth WHERE id=:user_id');
+    $stmt = $db->prepare('SELECT * FROM google_auth WHERE user_id=:user_id');
     $stmt->bindParam(':user_id', $userId);
     $stmt->execute();
     $info = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -9,9 +9,9 @@ function getInfo2fa($db, $userId){
         $ga = new PHPGangsta_GoogleAuthenticator();
         $info['qr_code_url'] = $ga->getQRCodeGoogleUrl('Test', $info['auth_code']);
     }
-
     return $info;
 }
+
 function creat2fa($db, $userId){
     $ga = new PHPGangsta_GoogleAuthenticator();
     $secret = $ga->createSecret();
@@ -23,27 +23,34 @@ function creat2fa($db, $userId){
 }
 
 function update2fa($db, $userId, $enable) {
-    if ($enable) {
-        // Activer 2FA et générer un code secret si inexistant
-        $ga = new PHPGangsta_GoogleAuthenticator();
-        $secret = $ga->createSecret();
+    $info = getInfo2fa($db, $userId);
 
-        $stmt = $db->prepare('UPDATE google_auth SET auth_code = :auth_code, isActive = 1 WHERE id = :user_id');
-        $stmt->bindParam(':user_id', $userId, PDO::PARAM_INT);
-        $stmt->bindParam(':auth_code', $secret, PDO::PARAM_STR);
-        $stmt->execute();
+    if (!$info) {
+        // Si aucune entrée pour cet utilisateur, on crée un 2FA
+        creat2fa($db, $userId);
     } else {
-        // Désactiver le 2FA
-        $stmt = $db->prepare('UPDATE google_auth SET isActive = 0 WHERE id = :user_id');
+        // Mise à jour si l'entrée existe déjà
+        if ($enable) {
+            $stmt = $db->prepare('UPDATE google_auth SET isActive = 1 WHERE user_id = :user_id');
+        } else {
+            $stmt = $db->prepare('UPDATE google_auth SET isActive = 0 WHERE user_id = :user_id');
+        }
         $stmt->bindParam(':user_id', $userId, PDO::PARAM_INT);
         $stmt->execute();
     }
 }
 
+
 $userId = $_SESSION['user']['id'];
+// Vérification si une soumission du formulaire a eu lieu
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['enable_2fa'])) {
+    $enable2FA = (int)$_POST['enable_2fa']; // Convertir en entier (1 ou 0)
+    update2fa($db, $userId, $enable2FA);
 
-$Info2fa = getInfo2fa($db, $userId);
-
-if (!$Info2fa) {
-    $Info2fa = creat2fa($db, $userId);
+    // Rediriger après mise à jour pour éviter la double soumission
+    header("Location: manager.php?page=settings");
+    exit();
 }
+
+// Charger les infos initiales du 2FA
+$Info2fa = getInfo2fa($db, $userId);
