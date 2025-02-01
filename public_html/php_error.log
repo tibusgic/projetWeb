@@ -54,3 +54,49 @@ Stack trace:
 [31-Jan-2025 23:35:46 Europe/Paris] PHP Notice:  Undefined variable: userId in /home/thibaultgicquel6201/public_html/include/settings.php on line 26
 [31-Jan-2025 23:35:46 Europe/Paris] PHP Notice:  Undefined variable: userId in /home/thibaultgicquel6201/public_html/include/settings.php on line 29
 [01-Feb-2025 00:19:40 Europe/Paris] PHP Warning:  Use of undefined constant coucou - assumed 'coucou' (this will throw an Error in a future version of PHP) in /home/thibaultgicquel6201/public_html/include/settings.php on line 45
+[01-Feb-2025 00:40:54 Europe/Paris] PHP Notice:  Undefined index: isActive in /home/thibaultgicquel6201/public_html/php/get2fa.php on line 17
+[01-Feb-2025 00:55:07 Europe/Berlin] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/thibaultgicquel6201/public_html/index.php on line 2
+[01-Feb-2025 00:56:40 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag? in /home/thibaultgicquel6201/public_html/templates/2fa.twig:2
+Stack trace:
+#0 /home/vendor/twig/twig/src/Parser.php(342): Twig\Parser->filterBodyNodes()
+#1 /home/vendor/twig/twig/src/Parser.php(86): Twig\Parser->filterBodyNodes()
+#2 /home/vendor/twig/twig/src/Environment.php(488): Twig\Parser->parse()
+#3 /home/vendor/twig/twig/src/Environment.php(516): Twig\Environment->parse()
+#4 /home/vendor/twig/twig/src/Environment.php(348): Twig\Environment->compileSource()
+#5 /home/vendor/twig/twig/src/Environment.php(309): Twig\Environment->loadTemplate()
+#6 /home/thibaultgicquel6201/public_html/php/get2fa.php(47): Twig\Environment->load()
+#7 {main}
+  thrown in /home/thibaultgicquel6201/public_html/templates/2fa.twig on line 2
+[01-Feb-2025 00:56:44 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag? in /home/thibaultgicquel6201/public_html/templates/2fa.twig:2
+Stack trace:
+#0 /home/vendor/twig/twig/src/Parser.php(342): Twig\Parser->filterBodyNodes()
+#1 /home/vendor/twig/twig/src/Parser.php(86): Twig\Parser->filterBodyNodes()
+#2 /home/vendor/twig/twig/src/Environment.php(488): Twig\Parser->parse()
+#3 /home/vendor/twig/twig/src/Environment.php(516): Twig\Environment->parse()
+#4 /home/vendor/twig/twig/src/Environment.php(348): Twig\Environment->compileSource()
+#5 /home/vendor/twig/twig/src/Environment.php(309): Twig\Environment->loadTemplate()
+#6 /home/thibaultgicquel6201/public_html/php/get2fa.php(47): Twig\Environment->load()
+#7 {main}
+  thrown in /home/thibaultgicquel6201/public_html/templates/2fa.twig on line 2
+[01-Feb-2025 00:56:46 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag? in /home/thibaultgicquel6201/public_html/templates/2fa.twig:2
+Stack trace:
+#0 /home/vendor/twig/twig/src/Parser.php(342): Twig\Parser->filterBodyNodes()
+#1 /home/vendor/twig/twig/src/Parser.php(86): Twig\Parser->filterBodyNodes()
+#2 /home/vendor/twig/twig/src/Environment.php(488): Twig\Parser->parse()
+#3 /home/vendor/twig/twig/src/Environment.php(516): Twig\Environment->parse()
+#4 /home/vendor/twig/twig/src/Environment.php(348): Twig\Environment->compileSource()
+#5 /home/vendor/twig/twig/src/Environment.php(309): Twig\Environment->loadTemplate()
+#6 /home/thibaultgicquel6201/public_html/php/get2fa.php(47): Twig\Environment->load()
+#7 {main}
+  thrown in /home/thibaultgicquel6201/public_html/templates/2fa.twig on line 2
+[01-Feb-2025 00:56:48 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag? in /home/thibaultgicquel6201/public_html/templates/2fa.twig:2
+Stack trace:
+#0 /home/vendor/twig/twig/src/Parser.php(342): Twig\Parser->filterBodyNodes()
+#1 /home/vendor/twig/twig/src/Parser.php(86): Twig\Parser->filterBodyNodes()
+#2 /home/vendor/twig/twig/src/Environment.php(488): Twig\Parser->parse()
+#3 /home/vendor/twig/twig/src/Environment.php(516): Twig\Environment->parse()
+#4 /home/vendor/twig/twig/src/Environment.php(348): Twig\Environment->compileSource()
+#5 /home/vendor/twig/twig/src/Environment.php(309): Twig\Environment->loadTemplate()
+#6 /home/thibaultgicquel6201/public_html/php/get2fa.php(47): Twig\Environment->load()
+#7 {main}
+  thrown in /home/thibaultgicquel6201/public_html/templates/2fa.twig on line 2

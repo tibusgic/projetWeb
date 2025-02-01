@@ -1,13 +1,13 @@
 <?php
 function getInfo2fa($db, $userId){
-    $stmt = $db->prepare('SELECT * FROM google_auth WHERE user_id=:user_id');
+    $stmt = $db->prepare('SELECT g.*, p.* FROM google_auth g JOIN person p ON g.user_id = p.id WHERE g.user_id = :user_id');
     $stmt->bindParam(':user_id', $userId);
     $stmt->execute();
     $info = $stmt->fetch(PDO::FETCH_ASSOC);
     
     if ($info) {
         $ga = new PHPGangsta_GoogleAuthenticator();
-        $info['qr_code_url'] = $ga->getQRCodeGoogleUrl('Test', $info['auth_code']);
+        $info['qr_code_url'] = $ga->getQRCodeGoogleUrl($info['login'].': devbox.u-angers.fr/~thibaultgicquel6201', $info['auth_code']);
     }
     return $info;
 }
