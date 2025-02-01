@@ -100,3 +100,15 @@ Stack trace:
 #6 /home/thibaultgicquel6201/public_html/php/get2fa.php(47): Twig\Environment->load()
 #7 {main}
   thrown in /home/thibaultgicquel6201/public_html/templates/2fa.twig on line 2
+[01-Feb-2025 22:22:01 Europe/Paris] PHP Notice:  Trying to access array offset on value of type null in /home/thibaultgicquel6201/public_html/include/modifWine.php on line 51
+[01-Feb-2025 22:25:15 Europe/Paris] PHP Notice:  Trying to access array offset on value of type null in /home/thibaultgicquel6201/public_html/include/modifWine.php on line 53
+[01-Feb-2025 22:27:21 Europe/Paris] PHP Notice:  Trying to access array offset on value of type null in /home/thibaultgicquel6201/public_html/include/modifWine.php on line 53
+[01-Feb-2025 22:33:30 Europe/Paris] PHP Notice:  Trying to access array offset on value of type null in /home/thibaultgicquel6201/public_html/include/modifWine.php on line 53
+[01-Feb-2025 22:37:00 Europe/Paris] PHP Notice:  Trying to access array offset on value of type null in /home/thibaultgicquel6201/public_html/include/modifWine.php on line 53
+[01-Feb-2025 22:41:41 Europe/Paris] PHP Notice:  Trying to access array offset on value of type null in /home/thibaultgicquel6201/public_html/include/modifWine.php on line 53
+[01-Feb-2025 22:44:25 Europe/Paris] PHP Notice:  Trying to access array offset on value of type null in /home/thibaultgicquel6201/public_html/include/modifWine.php on line 53
+[01-Feb-2025 22:45:19 Europe/Paris] PHP Notice:  Trying to access array offset on value of type null in /home/thibaultgicquel6201/public_html/include/modifWine.php on line 53
+[01-Feb-2025 22:48:15 Europe/Paris] PHP Notice:  Trying to access array offset on value of type null in /home/thibaultgicquel6201/public_html/include/modifWine.php on line 53
+[01-Feb-2025 22:54:55 Europe/Paris] PHP Notice:  Trying to access array offset on value of type null in /home/thibaultgicquel6201/public_html/include/modifWine.php on line 53
+[01-Feb-2025 23:14:27 Europe/Paris] PHP Warning:  move_uploaded_file(wines/vin-definition.webp): failed to open stream: No such file or directory in /home/thibaultgicquel6201/public_html/include/modifWine.php on line 74
+[01-Feb-2025 23:14:27 Europe/Paris] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpjbQKsB' to 'wines/vin-definition.webp' in /home/thibaultgicquel6201/public_html/include/modifWine.php on line 74

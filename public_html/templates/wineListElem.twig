@@ -147,7 +147,11 @@
                                 <div class="mb-3">
                                     <label for="path_img" class="form-label" >Image</label>
                                     <p>Fichier actuel : <span id="current-file">{{ winesListElem.path_img}}</span></p>
-                                    <input type="file" class="form-control" id="path_img" name="path_img" accept="image/png, image/jpeg">
+                                    <input type="file" class="form-control" id="path_img" name="path_img" accept="image/png, image/jpeg, image/gif, image/svg, image/webp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="stock_limit" class="form-label">Limite des stocks</label>
+                                    <input type="text" class="form-control" id="stock_limit" name="stock_limit" value="{{ winesListElem.stock_limit}}" required>
                                 </div>
                                 <input type="hidden" id="wine_id" name="wine_id">
                             </form>
@@ -238,7 +242,6 @@
                 formData.append("cork_type", document.getElementById("cork_type").value);
                 formData.append("serving_temperature", document.getElementById("serving_temperature").value);
                 formData.append("aging_potential", document.getElementById("aging_potential").value);
-
                 // Gérer l'image
                 if (fileInput.files.length > 0) {
                     // Si un nouveau fichier est sélectionné, l'ajouter à FormData
@@ -248,8 +251,11 @@
                     formData.append("path_img", currentImage);
                 }
 
+
+                formData.append("stock_limit", document.getElementById("stock_limit").value);
+
                 // Envoyer les données au serveur
-                fetch('https://devbox.u-angers.fr/~thibaultgicquel6201/include/modifWine.php', {
+                fetch('../include/modifWine.php', {
                     method: 'POST',
                     body: formData // Utiliser FormData pour envoyer les données
                 })
