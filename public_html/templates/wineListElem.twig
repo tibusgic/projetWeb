@@ -215,8 +215,13 @@
             }
 
             function OpenModalModif(wineId){
-                $('#editWineModal' + wineId).modal('show');
-                console.log("Modifying wine with ID:", wineId);
+                console.log("Ouverture du modal pour l'ID:", wineId);
+                let modal = document.getElementById('editWineModal' + wineId);
+                if (modal) {
+                    $(modal).modal('show');
+                } else {
+                    console.error("Modale non trouvée pour l'ID:", wineId);
+                }
             }
 
             function ModifWine(wineId){
@@ -239,7 +244,14 @@
                 formData.append("country_of_origin", document.getElementById("country_of_origin"+wineId).value);
                 formData.append("grape_varieties", document.getElementById("grape_varieties"+wineId).value);
                 formData.append("wine_type", document.getElementById("wine_type"+wineId).value);
-                formData.append("vintage", document.getElementById("vintage"+wineId).value);
+
+                let vintageValue = document.getElementById("vintage" + wineId).value.trim();
+                if (!vintageValue || isNaN(vintageValue) || vintageValue.length !== 4) {
+                    vintageValue = null;  // Laisser null si c'est vide ou invalide
+                }
+                console.log("Millésime:", vintageValue);
+                formData.append("vintage", vintageValue);
+
                 formData.append("alcohol_content", document.getElementById("alcohol_content"+wineId).value);
                 formData.append("classification", document.getElementById("classification"+wineId).value);
                 formData.append("certifications", document.getElementById("certifications"+wineId).value);
@@ -258,6 +270,8 @@
 
 
                 formData.append("stock_limit", document.getElementById("stock_limit"+wineId).value);
+                const formDataObject = Object.fromEntries(formData.entries());
+                console.log("Données à envoyer:", formDataObject);
 
                 // Envoyer les données au serveur
                 fetch('../include/modifWine.php', {
@@ -266,8 +280,9 @@
                 })
                 .then(response => response.json())
                 .then(data => {
-                    console.log('Réponse du serveur:', data);
-                    $('#editWineModal').modal('hide'); // Fermer la modale après la réponse
+                    console.log("Réponse du serveur:");
+                    console.table(data);
+                    $('#editWineModal'+wineId).modal('hide'); // Fermer la modale après la réponse
                 })
                 .catch(error => console.error('Erreur:', error));
             }

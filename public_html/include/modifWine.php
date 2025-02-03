@@ -41,10 +41,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt->bindParam(':aging_potential', $aging_potential);
         $stmt->bindParam(':path_img', $path_img);
         $stmt->bindParam(':stock_limit', $stock_limit);
+        $res = $stmt->execute();
 
-        $stmt->execute();
 
-        return $stmt;
+        if ($res) {
+            return json_encode(["success" => true, "message" => "Modification réussie", "id" => $id]);
+        } else {
+            ob_start();
+            $stmt->debugDumpParams();  // Capture les détails de la requête
+            $debugInfo = ob_get_clean();  // Récupérer ce qui a été imprimé et le stocker dans une variable
+
+            // Retourner l'erreur avec les détails de débogage
+            return json_encode([
+                "success" => false, 
+                "message" => "Échec de la modification", 
+                "error" => $stmt->errorInfo(),
+                "debug" => $debugInfo  // Inclure les informations de débogage dans le JSON
+            ]);
+                }
     }
 
 
@@ -56,6 +70,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $grape_varieties = $_POST['grape_varieties'] ?? null;
     $wine_type = $_POST['wine_type'] ?? null;
     $vintage = $_POST['vintage'] ?? null;
+    if ($vintage === 'null' || $vintage === '') {
+        $vintage = null;  // Remplacer 'null' ou une chaîne vide par une valeur null
+    }
     $alcohol_content = $_POST['alcohol_content'] ?? null;
     $classification = $_POST['classification'] ?? null;
     $certifications = $_POST['certifications'] ?? null;
