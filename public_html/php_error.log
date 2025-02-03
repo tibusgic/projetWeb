@@ -112,3 +112,51 @@ Stack trace:
 [01-Feb-2025 22:54:55 Europe/Paris] PHP Notice:  Trying to access array offset on value of type null in /home/thibaultgicquel6201/public_html/include/modifWine.php on line 53
 [01-Feb-2025 23:14:27 Europe/Paris] PHP Warning:  move_uploaded_file(wines/vin-definition.webp): failed to open stream: No such file or directory in /home/thibaultgicquel6201/public_html/include/modifWine.php on line 74
 [01-Feb-2025 23:14:27 Europe/Paris] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpjbQKsB' to 'wines/vin-definition.webp' in /home/thibaultgicquel6201/public_html/include/modifWine.php on line 74
+[03-Feb-2025 13:43:10 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: The block 'content' has already been defined line 36. in /home/thibaultgicquel6201/public_html/templates/layout.twig:41
+Stack trace:
+#0 /home/vendor/twig/twig/src/Parser.php(171): Twig\TokenParser\BlockTokenParser->parse()
+#1 /home/vendor/twig/twig/src/TokenParser/IfTokenParser.php(50): Twig\Parser->subparse()
+#2 /home/vendor/twig/twig/src/Parser.php(171): Twig\TokenParser\IfTokenParser->parse()
+#3 /home/vendor/twig/twig/src/Parser.php(84): Twig\Parser->subparse()
+#4 /home/vendor/twig/twig/src/Environment.php(488): Twig\Parser->parse()
+#5 /home/vendor/twig/twig/src/Environment.php(516): Twig\Environment->parse()
+#6 /home/vendor/twig/twig/src/Environment.php(348): Twig\Environment->compileSource()
+#7 /home/vendor/twig/twig/src/Template.php(322): Twig\Environment->loadTemplate()
+#8 /home/vendor/twig/twig/src/Environment.php(358) : eval()'d code(41): Twig\Template->loadTemplate()
+#9 /home/vendor/twig/twig/src/Template.php(394): __TwigTemplate_2d2c7547e138096ba23cb05e4d2320e8dd828 in /home/thibaultgicquel6201/public_html/templates/layout.twig on line 41
+[03-Feb-2025 13:43:42 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: The block 'content' has already been defined line 36. in /home/thibaultgicquel6201/public_html/templates/layout.twig:41
+Stack trace:
+#0 /home/vendor/twig/twig/src/Parser.php(171): Twig\TokenParser\BlockTokenParser->parse()
+#1 /home/vendor/twig/twig/src/TokenParser/IfTokenParser.php(50): Twig\Parser->subparse()
+#2 /home/vendor/twig/twig/src/Parser.php(171): Twig\TokenParser\IfTokenParser->parse()
+#3 /home/vendor/twig/twig/src/Parser.php(84): Twig\Parser->subparse()
+#4 /home/vendor/twig/twig/src/Environment.php(488): Twig\Parser->parse()
+#5 /home/vendor/twig/twig/src/Environment.php(516): Twig\Environment->parse()
+#6 /home/vendor/twig/twig/src/Environment.php(348): Twig\Environment->compileSource()
+#7 /home/vendor/twig/twig/src/Template.php(322): Twig\Environment->loadTemplate()
+#8 /home/vendor/twig/twig/src/Environment.php(358) : eval()'d code(41): Twig\Template->loadTemplate()
+#9 /home/vendor/twig/twig/src/Template.php(394): __TwigTemplate_2d2c7547e138096ba23cb05e4d2320e8dd828 in /home/thibaultgicquel6201/public_html/templates/layout.twig on line 41
+[03-Feb-2025 13:43:43 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: The block 'content' has already been defined line 36. in /home/thibaultgicquel6201/public_html/templates/layout.twig:41
+Stack trace:
+#0 /home/vendor/twig/twig/src/Parser.php(171): Twig\TokenParser\BlockTokenParser->parse()
+#1 /home/vendor/twig/twig/src/TokenParser/IfTokenParser.php(50): Twig\Parser->subparse()
+#2 /home/vendor/twig/twig/src/Parser.php(171): Twig\TokenParser\IfTokenParser->parse()
+#3 /home/vendor/twig/twig/src/Parser.php(84): Twig\Parser->subparse()
+#4 /home/vendor/twig/twig/src/Environment.php(488): Twig\Parser->parse()
+#5 /home/vendor/twig/twig/src/Environment.php(516): Twig\Environment->parse()
+#6 /home/vendor/twig/twig/src/Environment.php(348): Twig\Environment->compileSource()
+#7 /home/vendor/twig/twig/src/Template.php(322): Twig\Environment->loadTemplate()
+#8 /home/vendor/twig/twig/src/Environment.php(358) : eval()'d code(42): Twig\Template->loadTemplate()
+#9 /home/vendor/twig/twig/src/Template.php(394): __TwigTemplate_2e714db03885868d6cf1919327bb3dee4511a in /home/thibaultgicquel6201/public_html/templates/layout.twig on line 41
+[03-Feb-2025 13:43:46 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: The block 'content' has already been defined line 36. in /home/thibaultgicquel6201/public_html/templates/layout.twig:41
+Stack trace:
+#0 /home/vendor/twig/twig/src/Parser.php(171): Twig\TokenParser\BlockTokenParser->parse()
+#1 /home/vendor/twig/twig/src/TokenParser/IfTokenParser.php(50): Twig\Parser->subparse()
+#2 /home/vendor/twig/twig/src/Parser.php(171): Twig\TokenParser\IfTokenParser->parse()
+#3 /home/vendor/twig/twig/src/Parser.php(84): Twig\Parser->subparse()
+#4 /home/vendor/twig/twig/src/Environment.php(488): Twig\Parser->parse()
+#5 /home/vendor/twig/twig/src/Environment.php(516): Twig\Environment->parse()
+#6 /home/vendor/twig/twig/src/Environment.php(348): Twig\Environment->compileSource()
+#7 /home/vendor/twig/twig/src/Template.php(322): Twig\Environment->loadTemplate()
+#8 /home/vendor/twig/twig/src/Environment.php(358) : eval()'d code(42): Twig\Template->loadTemplate()
+#9 /home/vendor/twig/twig/src/Template.php(394): __TwigTemplate_2e714db03885868d6cf1919327bb3dee4511a in /home/thibaultgicquel6201/public_html/templates/layout.twig on line 41

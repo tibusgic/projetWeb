@@ -50,10 +50,11 @@ switch($action) {
                 }
                 break;
 }
-
+$sideBar = 0;
 // Charger le template correspondant avec Twig
 $template = $twig->load($action . '.twig');
 echo $template->render([
     'error' => $error ?? null,
     'user' => $_SESSION['user'] ?? null,
+    'sideBar' => $sideBar,
 ]);

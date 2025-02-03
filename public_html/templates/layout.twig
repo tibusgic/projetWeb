@@ -26,12 +26,15 @@
     <body>	
 
         <div class="container-fluid">
-        <div class="row">
+        <div class="row"> 
+        {% if sideBar == 1 %}
             <div class="col-md-3 col-lg-2 sidebar">
                 {% block sidebar %}
                 {% endblock %}
             </div>
-            <div class="col-md-9 col-lg-10 content">
+        {% endif %}
+        
+            <div class="col {% if sideBar == 1 %}col-md-9 col-lg-10{% endif %} content">
                 {% block content %}
                 {% endblock %}
             </div>

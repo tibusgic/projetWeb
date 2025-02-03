@@ -32,6 +32,7 @@ elseif($activePage === 'settings'){
 $template = $twig->load('dashboard.twig');
 echo $template->render([
     'activePage' => $activePage,
+    'sideBar' => 1,
     'error' => $error ?? null,
     'user' => $_SESSION['user'] ?? null,
     'personList' => $personList ?? null,

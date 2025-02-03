@@ -18,6 +18,10 @@ if (!$userCode) {
         $_SESSION['2fa_verified'] = true; // Contournement si 2FA désactivé
         header('Location: manager.php');
         exit;
+    }elseif(!$res){
+        $_SESSION['2fa_verified'] = true; // Contournement si 2FA désactivé
+        header('Location: manager.php');
+        exit;
     }
 } else {
     // Récupérer l'ID utilisateur
@@ -59,4 +63,5 @@ $template = $twig->load($action . '.twig');
 echo $template->render([
     'error' => $error ?? null,
     'user' => $_SESSION['user'] ?? null,
+    'sideBar' => 0,
 ]);
