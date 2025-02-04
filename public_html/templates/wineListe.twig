@@ -54,7 +54,7 @@
                                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
                                     </svg> Filtrer</button>
 
-                                    <button class="btn btn-success ms-2" type="button"><i class="uil uil-cog"></i> Avancé</button>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -174,5 +174,68 @@
             // Initialize dropdowns on page load
             updateDropdowns();
         });
+
+
+        // ------------- Pagination ----------------
+        document.addEventListener("DOMContentLoaded", function () {
+            const wineItems = document.querySelectorAll(".wine-item");
+            const itemsPerPage = 5;
+            let currentPage = 1;
+            const paginationContainer = document.querySelector(".wine-pagination");
+
+            function showPage(page) {
+                const start = (page - 1) * itemsPerPage;
+                const end = start + itemsPerPage;
+
+                wineItems.forEach((item, index) => {
+                    item.style.display = index >= start && index < end ? "" : "none";
+                });
+            }
+
+            function createPagination() {
+                paginationContainer.innerHTML = "";
+                const totalPages = Math.ceil(wineItems.length / itemsPerPage);
+
+                if (totalPages > 1) {
+                    const prev = document.createElement("li");
+                    prev.classList.add("page-item");
+                    prev.innerHTML = `<a class="page-link" href="#">&laquo;</a>`;
+                    prev.onclick = () => changePage(currentPage - 1);
+                    if (currentPage === 1) prev.classList.add("disabled");
+                    paginationContainer.appendChild(prev);
+
+                    for (let i = 1; i <= totalPages; i++) {
+                        const pageItem = document.createElement("li");
+                        pageItem.classList.add("page-item");
+                        if (i === currentPage) pageItem.classList.add("active");
+                        pageItem.innerHTML = `<a class="page-link" href="#">${i}</a>`;
+                        pageItem.onclick = () => changePage(i);
+                        paginationContainer.appendChild(pageItem);
+                    }
+
+                    const next = document.createElement("li");
+                    next.classList.add("page-item");
+                    next.innerHTML = `<a class="page-link" href="#">&raquo;</a>`;
+                    next.onclick = () => changePage(currentPage + 1);
+                    if (currentPage === totalPages) next.classList.add("disabled");
+                    paginationContainer.appendChild(next);
+                }
+            }
+
+            function changePage(page) {
+                const totalPages = Math.ceil(wineItems.length / itemsPerPage);
+                if (page < 1 || page > totalPages) return;
+                currentPage = page;
+                showPage(currentPage);
+                createPagination();
+            }
+
+            showPage(currentPage);
+            createPagination();
+        });
+
+
+
+
     </script>
 </section>

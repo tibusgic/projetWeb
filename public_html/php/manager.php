@@ -23,6 +23,7 @@ if ($activePage === 'members') {
 }
 elseif($activePage === 'wines'){
     include('../include/getAllWines.php');
+    include('../include/getImages.php');
 }
 elseif($activePage === 'settings'){
     include('../include/settings.php');
@@ -38,6 +39,7 @@ echo $template->render([
     'personList' => $personList ?? null,
     'winesList' => $winesList ?? null,
     'Info2fa' => $Info2fa ?? null,
+    'images' => $images ?? null,
 ]);
 
 ?>

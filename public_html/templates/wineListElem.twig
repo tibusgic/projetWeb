@@ -144,14 +144,36 @@
                                     <label for="aging_potential" class="form-label">Potentiel de garde</label>
                                     <input type="text" class="form-control" id="aging_potential{{ winesListElem.id }}" name="aging_potential" value="{{ winesListElem.aging_potential}}" required>
                                 </div>
+
+
                                 <div class="mb-3">
-                                    <label for="path_img" class="form-label" >Image</label>
-                                    <p>Fichier actuel : <span id="current-file{{ winesListElem.id }}">{{ winesListElem.path_img}}</span></p>
+                                    <label for="path_img" class="form-label">Image</label>
+
+                                    <!-- Affichage de l'image actuelle -->
+                                    <p>Fichier actuel : <span id="current-file{{ winesListElem.id }}">{{ winesListElem.path_img }}</span></p>
                                     <div class="list-images">
-                                        <img src="https://devbox.u-angers.fr/~thibaultgicquel6201/img/wines/{{ winesListElem.path_img}}" alt="Bouteille de vin" class="avatar-md img-thumbnail rounded-circle" />
+                                        <img id="preview-image{{ winesListElem.id }}" 
+                                            src="../img/wines/{{ winesListElem.path_img }}" 
+                                            alt="Bouteille de vin" 
+                                            class="avatar-md img-thumbnail rounded-circle" />
                                     </div>
+                                    
+                                    <!-- Sélection d'une image existante -->
+                                    <label for="existingImageSelect">Choisir une image existante :</label>
+                                    <select id="existingImageSelect{{ winesListElem.id }}" class="form-select">
+                                        <option value="{{ winesListElem.path_img }}" selected>Garder l'image actuelle</option>
+                                        {% for elem in images %}
+                                            <option value="{{ elem }}" selected>{{ elem }}</option>
+                                        {% endfor %}
+                                        <!-- Les options seront générées dynamiquement par JS -->
+                                    </select>
+
+                                    <!-- Importation d'une nouvelle image -->
+                                    <label for="path_img{{ winesListElem.id }}" class="form-label mt-2">Ou importer une nouvelle image :</label>
                                     <input type="file" class="form-control" id="path_img{{ winesListElem.id }}" name="path_img" accept="image/png, image/jpeg, image/gif, image/svg, image/webp">
                                 </div>
+
+
                                 
                                 <div class="mb-3">
                                     <label for="stock_limit" class="form-label">Limite des stocks</label>
@@ -190,7 +212,7 @@
             function suprWine(wineId) {
                 console.log(wineId);
                 const data = { id: wineId };
-                fetch('https://devbox.u-angers.fr/~thibaultgicquel6201/include/suprWine.php', {
+                fetch('../include/suprWine.php', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -231,7 +253,8 @@
                 const fileInput = document.getElementById("path_img"+wineId);
 
                 // Récupérer le chemin de l'image actuelle
-                const currentImage = document.getElementById("current-file"+wineId).textContent;
+                const selectInput = document.getElementById("existingImageSelect" + wineId);
+                let currentImage = document.getElementById("current-file" + wineId).textContent;
 
                 // Créer un objet FormData pour envoyer les données du formulaire
                 const formData = new FormData();
@@ -249,7 +272,6 @@
                 if (!vintageValue || isNaN(vintageValue) || vintageValue.length !== 4) {
                     vintageValue = null;  // Laisser null si c'est vide ou invalide
                 }
-                console.log("Millésime:", vintageValue);
                 formData.append("vintage", vintageValue);
 
                 formData.append("alcohol_content", document.getElementById("alcohol_content"+wineId).value);
@@ -261,10 +283,13 @@
                 formData.append("aging_potential", document.getElementById("aging_potential"+wineId).value);
                 // Gérer l'image
                 if (fileInput.files.length > 0) {
-                    // Si un nouveau fichier est sélectionné, l'ajouter à FormData
+                    // Si un fichier est uploadé, utiliser ce fichier
                     formData.append("path_img", fileInput.files[0]);
+                } else if (selectInput && selectInput.value) {
+                    // Si aucun fichier n'est uploadé mais une image est sélectionnée dans le select
+                    formData.append("path_img", selectInput.value);
                 } else {
-                    // Sinon, utiliser l'image actuelle
+                    // Sinon, garder l'image actuelle
                     formData.append("path_img", currentImage);
                 }
 
@@ -286,7 +311,22 @@
                 })
                 .catch(error => console.error('Erreur:', error));
             }
-            
+
+
+            // Gestion de l'affichage de l'image sélectionnée dans le select
+            document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll("[id^='existingImageSelect']").forEach(select => {
+                select.addEventListener("change", function () {
+                    let wineId = this.id.replace("existingImageSelect", ""); // Récupère l'ID du vin
+                    let selectedImage = this.value; // Récupère la valeur sélectionnée
+                    let previewImage = document.getElementById("preview-image" + wineId);
+
+                    // Met à jour la source de l'image affichée
+                    previewImage.src = "../img/wines/" + selectedImage;
+                });
+            });
+        });
+                    
 
             </script>
 
