@@ -2,6 +2,7 @@
 <section id="wine-section" class="section-wine">
     <div class="container-wine">
         <!-- Recherche et filtres -->
+        <button class="btn btn-success col-lg-3" type="button" onclick="newWine()" ><i class="uil uil-filter"></i>Nouveau Vin</button>
         <div class="justify-content-center row">
             <div class="col-lg-12">
                 <div class="wine-list-widgets mb-4">
@@ -53,7 +54,7 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
                                     </svg> Filtrer</button>
-
+                                    
                                     
                                 </div>
                             </div>
@@ -96,6 +97,116 @@
             </div>
         </div>
     </div>
+
+    <!-- Modale pour creer un vin -->
+            <div class="modal fade" id="editNewWineModal" tabindex="-1" aria-labelledby="editNewWineModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="editNewWineModalLabel">Modifier le vin</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="editNewWineForm">
+                                <div class="mb-3">
+                                    <label for="domaine_name" class="form-label">Domaine</label>
+                                    <input type="text" class="form-control" id="domaine_name" name="domaine_name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="appellation" class="form-label">Appellation</label>
+                                    <input type="text" class="form-control" id="appellation" name="appellation" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="region" class="form-label">Région</label>
+                                    <input type="text" class="form-control" id="region" name="region">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="country_of_origin" class="form-label">Pays d'origine</label>
+                                    <input type="text" class="form-control" id="country_of_origin" name="country_of_origin">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="grape_varieties" class="form-label">Cépages</label>
+                                    <input type="text" class="form-control" id="grape_varieties" name="grape_varieties">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="wine_type" class="form-label">Type de vin</label>
+                                    <input type="text" class="form-control" id="wine_type" name="wine_type"required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="vintage" class="form-label">Millésime</label>
+                                    <input type="number" class="form-control" id="vintage" name="vintage">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="alcohol_content" class="form-label">Taux d'alcool</label>
+                                    <input type="number" step="0.1" class="form-control" id="alcohol_content" name="alcohol_content">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="classification" class="form-label">Classification</label>
+                                    <input type="text" class="form-control" id="classification" name="classification">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="certifications" class="form-label">Certifications</label>
+                                    <input type="text" class="form-control" id="certifications" name="certifications">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="bottle_size" class="form-label">Taille de la bouteille</label>
+                                    <input type="text" class="form-control" id="bottle_size" name="bottle_size">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="cork_type" class="form-label">Type de bouchon</label>
+                                    <input type="text" class="form-control" id="cork_type" name="cork_type">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="serving_temperature" class="form-label">Température de service</label>
+                                    <input type="text" class="form-control" id="serving_temperature" name="serving_temperature">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="aging_potential" class="form-label">Potentiel de garde</label>
+                                    <input type="text" class="form-control" id="aging_potential" name="aging_potential">
+                                </div>
+
+
+                                <div class="mb-3">
+                                    <label for="path_img" class="form-label">Image</label>
+
+                                    <div class="list-images">
+                                        <img id="preview-image" 
+                                            src="../img/wines/red-wine-bottle-png.webp" 
+                                            alt="Bouteille de vin" 
+                                            class="avatar-md img-thumbnail rounded-circle" />
+                                    </div>
+                                    
+                                    <!-- Sélection d'une image existante -->
+                                    <label for="existingImageSelect">Choisir une image existante :</label>
+                                    <select id="existingImageSelect{{ winesListElem.id }}" class="form-select">
+                                        <option value="{{ winesListElem.path_img }}" selected>Garder l'image actuelle</option>
+                                        {% for elem in images %}
+                                            <option value="{{ elem }}" selected>{{ elem }}</option>
+                                        {% endfor %}
+                                        <!-- Les options seront générées dynamiquement par JS -->
+                                    </select>
+
+                                    <!-- Importation d'une nouvelle image -->
+                                    <label for="path_img{{ winesListElem.id }}" class="form-label mt-2">Ou importer une nouvelle image :</label>
+                                    <input type="file" class="form-control" id="path_img{{ winesListElem.id }}" name="path_img" accept="image/png, image/jpeg, image/gif, image/svg, image/webp">
+                                </div>
+
+
+                                
+                                <div class="mb-3">
+                                    <label for="stock_limit" class="form-label">Limite des stocks</label>
+                                    <input type="text" class="form-control" id="stock_limit{{ winesListElem.id }}" name="stock_limit" value="{{ winesListElem.stock_limit}}" required>
+                                </div>
+                                <input type="hidden" id="wine_id" name="wine_id">
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                            <button type="button" class="btn btn-primary" id="saveChangesButton" onclick="ModifWine({{ winesListElem.id }})">Enregistrer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const searchInput = document.getElementById("wineSearchInput");

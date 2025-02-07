@@ -275,6 +275,13 @@
                 formData.append("vintage", vintageValue);
 
                 formData.append("alcohol_content", document.getElementById("alcohol_content"+wineId).value);
+
+                let alcohol_content = document.getElementById("alcohol_content" + wineId).value.trim();
+                                if (!alcohol_content || isNaN(alcohol_content)) {
+                                    alcohol_content = null;  // Laisser null si c'est vide ou invalide
+                                }
+                                formData.append("alcohol_content", alcohol_content);
+
                 formData.append("classification", document.getElementById("classification"+wineId).value);
                 formData.append("certifications", document.getElementById("certifications"+wineId).value);
                 formData.append("bottle_size", document.getElementById("bottle_size"+wineId).value);
