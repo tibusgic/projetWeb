@@ -210,3 +210,27 @@ Stack trace:
 [11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: firstname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 20
 [11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: lastname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 21
 [11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: pass in /home/thibaultgicquel6201/public_html/api/person/read.php on line 23
+[11-Feb-2025 14:42:27 Europe/Berlin] PHP Warning:  Unterminated comment starting line 21 in /home/thibaultgicquel6201/public_html/index.php on line 21
+[11-Feb-2025 14:43:30 Europe/Paris] PHP Notice:  Undefined index: username in /home/thibaultgicquel6201/public_html/index.php on line 15
+[11-Feb-2025 14:43:30 Europe/Paris] PHP Notice:  Undefined index: password in /home/thibaultgicquel6201/public_html/index.php on line 15
+[11-Feb-2025 14:43:30 Europe/Berlin] PHP Notice:  Undefined index: username in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
+[11-Feb-2025 14:43:30 Europe/Berlin] PHP Notice:  Undefined index: password in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
+[11-Feb-2025 14:47:25 Europe/Berlin] PHP Notice:  Undefined index: HTTP_AUTHORIZATION in /home/thibaultgicquel6201/public_html/api/test/service.php on line 5
+[11-Feb-2025 14:49:20 Europe/Berlin] PHP Notice:  Undefined index: username in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
+[11-Feb-2025 14:49:20 Europe/Berlin] PHP Notice:  Undefined index: password in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
+[11-Feb-2025 14:49:35 Europe/Berlin] PHP Notice:  Undefined index: username in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
+[11-Feb-2025 14:49:35 Europe/Berlin] PHP Notice:  Undefined index: password in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
+[11-Feb-2025 14:52:43 Europe/Berlin] PHP Notice:  Undefined index: username in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
+[11-Feb-2025 14:52:43 Europe/Berlin] PHP Notice:  Undefined index: password in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
+[11-Feb-2025 14:52:44 Europe/Berlin] PHP Notice:  Undefined index: username in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
+[11-Feb-2025 14:52:44 Europe/Berlin] PHP Notice:  Undefined index: password in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
+[11-Feb-2025 14:52:51 Europe/Berlin] PHP Notice:  Undefined index: username in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
+[11-Feb-2025 14:52:51 Europe/Berlin] PHP Notice:  Undefined index: password in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
+[11-Feb-2025 14:57:19 Europe/Berlin] PHP Notice:  Undefined index: username in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
+[11-Feb-2025 14:57:19 Europe/Berlin] PHP Notice:  Undefined index: password in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
+[11-Feb-2025 14:59:36 Europe/Berlin] PHP Notice:  Undefined index: username in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
+[11-Feb-2025 14:59:36 Europe/Berlin] PHP Notice:  Undefined index: password in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
+[11-Feb-2025 14:59:52 Europe/Berlin] PHP Notice:  Undefined index: username in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
+[11-Feb-2025 14:59:52 Europe/Berlin] PHP Notice:  Undefined index: password in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
+[11-Feb-2025 15:04:07 Europe/Berlin] PHP Notice:  Undefined index: username in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
+[11-Feb-2025 15:04:07 Europe/Berlin] PHP Notice:  Undefined index: password in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
