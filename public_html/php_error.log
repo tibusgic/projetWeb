@@ -170,3 +170,43 @@ Stack trace:
 #0 /home/thibaultgicquel6201/public_html/include/modifWine.php(79): maFonctionPHP()
 #1 {main}
   thrown in /home/thibaultgicquel6201/public_html/include/modifWine.php on line 27
+[11-Feb-2025 12:46:15 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'Student' not found in /home/thibaultgicquel6201/public_html/api/person/read.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/thibaultgicquel6201/public_html/api/person/read.php on line 8
+[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: firstname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 20
+[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: lastname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 21
+[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: pass in /home/thibaultgicquel6201/public_html/api/person/read.php on line 23
+[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: firstname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 20
+[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: lastname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 21
+[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: pass in /home/thibaultgicquel6201/public_html/api/person/read.php on line 23
+[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: firstname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 20
+[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: lastname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 21
+[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: pass in /home/thibaultgicquel6201/public_html/api/person/read.php on line 23
+[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: firstname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 20
+[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: lastname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 21
+[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: pass in /home/thibaultgicquel6201/public_html/api/person/read.php on line 23
+[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: firstname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 20
+[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: lastname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 21
+[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: pass in /home/thibaultgicquel6201/public_html/api/person/read.php on line 23
+[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: firstname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 20
+[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: lastname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 21
+[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: pass in /home/thibaultgicquel6201/public_html/api/person/read.php on line 23
+[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: firstname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 20
+[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: lastname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 21
+[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: pass in /home/thibaultgicquel6201/public_html/api/person/read.php on line 23
+[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: firstname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 20
+[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: lastname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 21
+[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: pass in /home/thibaultgicquel6201/public_html/api/person/read.php on line 23
+[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: firstname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 20
+[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: lastname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 21
+[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: pass in /home/thibaultgicquel6201/public_html/api/person/read.php on line 23
+[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: firstname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 20
+[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: lastname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 21
+[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: pass in /home/thibaultgicquel6201/public_html/api/person/read.php on line 23
+[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: firstname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 20
+[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: lastname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 21
+[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: pass in /home/thibaultgicquel6201/public_html/api/person/read.php on line 23
+[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: firstname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 20
+[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: lastname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 21
+[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: pass in /home/thibaultgicquel6201/public_html/api/person/read.php on line 23
