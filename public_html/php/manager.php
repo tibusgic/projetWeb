@@ -17,9 +17,21 @@ $activePage = $_GET['page'] ?? 'dashboard'; // Par défaut, 'dashboard' est acti
 //charger les donnee des membres
 if ($activePage === 'members') {
     include('../include/addMember.php');
+    /*
     $stmt = $db->prepare('SELECT * FROM person');
     $stmt->execute();
     $personList = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    */
+
+    //utilisation de l'api
+    $personListJson = file_get_contents('https://devbox.u-angers.fr/~thibaultgicquel6201/api/person/read.php');
+    $personListObj = json_decode($personListJson);
+
+    if (isset($personListObj->records) && is_array($personListObj->records)) {
+        $personList = $personListObj->records;
+    } else {
+        $personList = []; // Valeur par défaut
+    }
 }
 elseif($activePage === 'wines'){
     include('../include/getAllWines.php');

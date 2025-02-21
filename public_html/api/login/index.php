@@ -9,7 +9,14 @@ use Lcobucci\JWT\Signer\Key\InMemory;
 echo login($_POST['username'], $_POST['password']);
 
 function login($username, $password) {
-  if ($password === 'niala') {
+  $db = new PDO('mysql:host=localhost;dbname=thibaultgicquel6201;charset=utf8mb4', 'thibaultgicquel6201', 'WOWjSaNlCy8C');
+  $stmt = $db->prepare('SELECT * FROM person WHERE login = :login AND password = MD5(:password)');
+
+                $stmt->bindParam(':login', $username);
+                $stmt->bindParam(':password', $password);
+                $stmt->execute();
+                $user = $stmt->fetch(PDO::FETCH_ASSOC);
+  if ($user) {
     $configuration = Configuration::forSymmetricSigner(
       new Sha256(),
       InMemory::plainText('polytech')
@@ -21,6 +28,10 @@ function login($username, $password) {
       ->issuedAt($now)
       ->expiresAt($now->modify('+1 hour'))
       ->withClaim('ulogin', $username)
+      ->withClaim('uId', $user['id'])
+      ->withClaim('uNom', $user['nom'])
+      ->withClaim('uPrenom', $user['prenom'])
+      ->withClaim('uStatus', $user['status'])
       ->getToken($configuration->signer(), $configuration->signingKey());
 
 //$token->headers(); // Retrieves the token headers

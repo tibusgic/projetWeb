@@ -1,15 +1,22 @@
 <?php
 ini_set('session.cookie_path', '/');
 require_once('../include/config.php');
+use Lcobucci\Clock\SystemClock;
+use Lcobucci\JWT\Configuration;
+use Lcobucci\JWT\Signer\Hmac\Sha256;
+use Lcobucci\JWT\Signer\Key\InMemory;
+use Lcobucci\JWT\Validation\Constraint;
+use Lcobucci\JWT\Validation\Constraint\SignedWith;
 
 $action = "2fa";
 
 // Vérifier si un code a été soumis
 $userCode = $_POST['code'] ?? null;
+$userId = $_SESSION['user']['token']->claims()->get('uStatus') ?? null;
 if (!$userCode) {
     $error = "Veuillez entrer un code de vérification.";
 
-    $userId = $_SESSION['user']['id'] ?? null;
+    
     $stmt = $db->prepare('SELECT * FROM google_auth WHERE user_id = :user_id');
     $stmt->bindParam(':user_id', $userId, PDO::PARAM_INT);
     $stmt->execute();
@@ -24,8 +31,7 @@ if (!$userCode) {
         exit;
     }
 } else {
-    // Récupérer l'ID utilisateur
-    $userId = $_SESSION['user']['id'] ?? null;
+
 
     if (!$userId) {
         $error = "Utilisateur non connecté.";

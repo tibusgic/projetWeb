@@ -2,6 +2,9 @@
 require_once('/home/vendor/autoload.php');
 require_once('/home/GoogleAuthenticator.php');
 
+
+
+
 // Démarrer la session si nécessaire
 if (session_status() === PHP_SESSION_NONE) {
         session_start();

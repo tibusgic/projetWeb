@@ -1,236 +1,89 @@
-[31-Jan-2025 22:42:16 Europe/Berlin] PHP Warning:  require_once(include/config.php): failed to open stream: No such file or directory in /home/thibaultgicquel6201/public_html/php/get2fa.php on line 3
-[31-Jan-2025 22:42:16 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'include/config.php' (include_path='.:/usr/share/php') in /home/thibaultgicquel6201/public_html/php/get2fa.php on line 3
-[31-Jan-2025 22:43:05 Europe/Paris] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/thibaultgicquel6201/public_html/php/get2fa.php on line 14
-[31-Jan-2025 22:45:14 Europe/Paris] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/thibaultgicquel6201/public_html/php/get2fa.php on line 14
-[31-Jan-2025 22:45:28 Europe/Paris] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/thibaultgicquel6201/public_html/php/get2fa.php on line 14
-[31-Jan-2025 22:45:41 Europe/Paris] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/thibaultgicquel6201/public_html/php/get2fa.php on line 14
-[31-Jan-2025 22:48:53 Europe/Paris] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/thibaultgicquel6201/public_html/php/get2fa.php on line 14
-[31-Jan-2025 23:33:38 Europe/Paris] PHP Notice:  Undefined variable: userId in /home/thibaultgicquel6201/public_html/include/settings.php on line 26
-[31-Jan-2025 23:33:38 Europe/Paris] PHP Notice:  Undefined variable: userId in /home/thibaultgicquel6201/public_html/include/settings.php on line 29
-[31-Jan-2025 23:33:38 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unexpected token "name" of value "fa_active" ("end of statement block" expected). in /home/thibaultgicquel6201/public_html/templates/settings.twig:5
-Stack trace:
-#0 /home/vendor/twig/twig/src/TokenParser/IfTokenParser.php(40): Twig\TokenStream->expect()
-#1 /home/vendor/twig/twig/src/Parser.php(171): Twig\TokenParser\IfTokenParser->parse()
-#2 /home/vendor/twig/twig/src/Parser.php(84): Twig\Parser->subparse()
-#3 /home/vendor/twig/twig/src/Environment.php(488): Twig\Parser->parse()
-#4 /home/vendor/twig/twig/src/Environment.php(516): Twig\Environment->parse()
-#5 /home/vendor/twig/twig/src/Environment.php(348): Twig\Environment->compileSource()
-#6 /home/vendor/twig/twig/src/Template.php(322): Twig\Environment->loadTemplate()
-#7 /home/vendor/twig/twig/src/Environment.php(358) : eval()'d code(121): Twig\Template->loadTemplate()
-#8 /home/vendor/twig/twig/src/Template.php(171): __TwigTemplate_cd2291c79c7fd288b14b23df338f8176822b95cd0ed2186828ed3d2897dc1d4c->block_content()
-#9 /home/ven in /home/thibaultgicquel6201/public_html/templates/settings.twig on line 5
-[31-Jan-2025 23:34:27 Europe/Paris] PHP Notice:  Undefined variable: userId in /home/thibaultgicquel6201/public_html/include/settings.php on line 26
-[31-Jan-2025 23:34:27 Europe/Paris] PHP Notice:  Undefined variable: userId in /home/thibaultgicquel6201/public_html/include/settings.php on line 29
-[31-Jan-2025 23:34:27 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unexpected token "name" of value "fa_active" ("end of statement block" expected). in /home/thibaultgicquel6201/public_html/templates/settings.twig:7
-Stack trace:
-#0 /home/vendor/twig/twig/src/TokenParser/IfTokenParser.php(40): Twig\TokenStream->expect()
-#1 /home/vendor/twig/twig/src/Parser.php(171): Twig\TokenParser\IfTokenParser->parse()
-#2 /home/vendor/twig/twig/src/Parser.php(84): Twig\Parser->subparse()
-#3 /home/vendor/twig/twig/src/Environment.php(488): Twig\Parser->parse()
-#4 /home/vendor/twig/twig/src/Environment.php(516): Twig\Environment->parse()
-#5 /home/vendor/twig/twig/src/Environment.php(348): Twig\Environment->compileSource()
-#6 /home/vendor/twig/twig/src/Template.php(322): Twig\Environment->loadTemplate()
-#7 /home/vendor/twig/twig/src/Environment.php(358) : eval()'d code(121): Twig\Template->loadTemplate()
-#8 /home/vendor/twig/twig/src/Template.php(171): __TwigTemplate_cd2291c79c7fd288b14b23df338f8176822b95cd0ed2186828ed3d2897dc1d4c->block_content()
-#9 /home/ven in /home/thibaultgicquel6201/public_html/templates/settings.twig on line 7
-[31-Jan-2025 23:34:46 Europe/Paris] PHP Notice:  Undefined variable: userId in /home/thibaultgicquel6201/public_html/include/settings.php on line 26
-[31-Jan-2025 23:34:46 Europe/Paris] PHP Notice:  Undefined variable: userId in /home/thibaultgicquel6201/public_html/include/settings.php on line 29
-[31-Jan-2025 23:34:46 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unexpected token "name" of value "fa_active" ("end of statement block" expected). in /home/thibaultgicquel6201/public_html/templates/settings.twig:30
-Stack trace:
-#0 /home/vendor/twig/twig/src/TokenParser/IfTokenParser.php(40): Twig\TokenStream->expect()
-#1 /home/vendor/twig/twig/src/Parser.php(171): Twig\TokenParser\IfTokenParser->parse()
-#2 /home/vendor/twig/twig/src/Parser.php(84): Twig\Parser->subparse()
-#3 /home/vendor/twig/twig/src/Environment.php(488): Twig\Parser->parse()
-#4 /home/vendor/twig/twig/src/Environment.php(516): Twig\Environment->parse()
-#5 /home/vendor/twig/twig/src/Environment.php(348): Twig\Environment->compileSource()
-#6 /home/vendor/twig/twig/src/Template.php(322): Twig\Environment->loadTemplate()
-#7 /home/vendor/twig/twig/src/Environment.php(358) : eval()'d code(121): Twig\Template->loadTemplate()
-#8 /home/vendor/twig/twig/src/Template.php(171): __TwigTemplate_cd2291c79c7fd288b14b23df338f8176822b95cd0ed2186828ed3d2897dc1d4c->block_content()
-#9 /home/ve in /home/thibaultgicquel6201/public_html/templates/settings.twig on line 30
-[31-Jan-2025 23:35:12 Europe/Paris] PHP Notice:  Undefined variable: userId in /home/thibaultgicquel6201/public_html/include/settings.php on line 26
-[31-Jan-2025 23:35:12 Europe/Paris] PHP Notice:  Undefined variable: userId in /home/thibaultgicquel6201/public_html/include/settings.php on line 29
-[31-Jan-2025 23:35:35 Europe/Paris] PHP Notice:  Undefined variable: userId in /home/thibaultgicquel6201/public_html/include/settings.php on line 26
-[31-Jan-2025 23:35:35 Europe/Paris] PHP Notice:  Undefined variable: userId in /home/thibaultgicquel6201/public_html/include/settings.php on line 29
-[31-Jan-2025 23:35:46 Europe/Paris] PHP Notice:  Undefined variable: userId in /home/thibaultgicquel6201/public_html/include/settings.php on line 26
-[31-Jan-2025 23:35:46 Europe/Paris] PHP Notice:  Undefined variable: userId in /home/thibaultgicquel6201/public_html/include/settings.php on line 29
-[01-Feb-2025 00:19:40 Europe/Paris] PHP Warning:  Use of undefined constant coucou - assumed 'coucou' (this will throw an Error in a future version of PHP) in /home/thibaultgicquel6201/public_html/include/settings.php on line 45
-[01-Feb-2025 00:40:54 Europe/Paris] PHP Notice:  Undefined index: isActive in /home/thibaultgicquel6201/public_html/php/get2fa.php on line 17
-[01-Feb-2025 00:55:07 Europe/Berlin] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/thibaultgicquel6201/public_html/index.php on line 2
-[01-Feb-2025 00:56:40 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag? in /home/thibaultgicquel6201/public_html/templates/2fa.twig:2
-Stack trace:
-#0 /home/vendor/twig/twig/src/Parser.php(342): Twig\Parser->filterBodyNodes()
-#1 /home/vendor/twig/twig/src/Parser.php(86): Twig\Parser->filterBodyNodes()
-#2 /home/vendor/twig/twig/src/Environment.php(488): Twig\Parser->parse()
-#3 /home/vendor/twig/twig/src/Environment.php(516): Twig\Environment->parse()
-#4 /home/vendor/twig/twig/src/Environment.php(348): Twig\Environment->compileSource()
-#5 /home/vendor/twig/twig/src/Environment.php(309): Twig\Environment->loadTemplate()
-#6 /home/thibaultgicquel6201/public_html/php/get2fa.php(47): Twig\Environment->load()
-#7 {main}
-  thrown in /home/thibaultgicquel6201/public_html/templates/2fa.twig on line 2
-[01-Feb-2025 00:56:44 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag? in /home/thibaultgicquel6201/public_html/templates/2fa.twig:2
-Stack trace:
-#0 /home/vendor/twig/twig/src/Parser.php(342): Twig\Parser->filterBodyNodes()
-#1 /home/vendor/twig/twig/src/Parser.php(86): Twig\Parser->filterBodyNodes()
-#2 /home/vendor/twig/twig/src/Environment.php(488): Twig\Parser->parse()
-#3 /home/vendor/twig/twig/src/Environment.php(516): Twig\Environment->parse()
-#4 /home/vendor/twig/twig/src/Environment.php(348): Twig\Environment->compileSource()
-#5 /home/vendor/twig/twig/src/Environment.php(309): Twig\Environment->loadTemplate()
-#6 /home/thibaultgicquel6201/public_html/php/get2fa.php(47): Twig\Environment->load()
-#7 {main}
-  thrown in /home/thibaultgicquel6201/public_html/templates/2fa.twig on line 2
-[01-Feb-2025 00:56:46 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag? in /home/thibaultgicquel6201/public_html/templates/2fa.twig:2
-Stack trace:
-#0 /home/vendor/twig/twig/src/Parser.php(342): Twig\Parser->filterBodyNodes()
-#1 /home/vendor/twig/twig/src/Parser.php(86): Twig\Parser->filterBodyNodes()
-#2 /home/vendor/twig/twig/src/Environment.php(488): Twig\Parser->parse()
-#3 /home/vendor/twig/twig/src/Environment.php(516): Twig\Environment->parse()
-#4 /home/vendor/twig/twig/src/Environment.php(348): Twig\Environment->compileSource()
-#5 /home/vendor/twig/twig/src/Environment.php(309): Twig\Environment->loadTemplate()
-#6 /home/thibaultgicquel6201/public_html/php/get2fa.php(47): Twig\Environment->load()
-#7 {main}
-  thrown in /home/thibaultgicquel6201/public_html/templates/2fa.twig on line 2
-[01-Feb-2025 00:56:48 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag? in /home/thibaultgicquel6201/public_html/templates/2fa.twig:2
-Stack trace:
-#0 /home/vendor/twig/twig/src/Parser.php(342): Twig\Parser->filterBodyNodes()
-#1 /home/vendor/twig/twig/src/Parser.php(86): Twig\Parser->filterBodyNodes()
-#2 /home/vendor/twig/twig/src/Environment.php(488): Twig\Parser->parse()
-#3 /home/vendor/twig/twig/src/Environment.php(516): Twig\Environment->parse()
-#4 /home/vendor/twig/twig/src/Environment.php(348): Twig\Environment->compileSource()
-#5 /home/vendor/twig/twig/src/Environment.php(309): Twig\Environment->loadTemplate()
-#6 /home/thibaultgicquel6201/public_html/php/get2fa.php(47): Twig\Environment->load()
-#7 {main}
-  thrown in /home/thibaultgicquel6201/public_html/templates/2fa.twig on line 2
-[01-Feb-2025 22:22:01 Europe/Paris] PHP Notice:  Trying to access array offset on value of type null in /home/thibaultgicquel6201/public_html/include/modifWine.php on line 51
-[01-Feb-2025 22:25:15 Europe/Paris] PHP Notice:  Trying to access array offset on value of type null in /home/thibaultgicquel6201/public_html/include/modifWine.php on line 53
-[01-Feb-2025 22:27:21 Europe/Paris] PHP Notice:  Trying to access array offset on value of type null in /home/thibaultgicquel6201/public_html/include/modifWine.php on line 53
-[01-Feb-2025 22:33:30 Europe/Paris] PHP Notice:  Trying to access array offset on value of type null in /home/thibaultgicquel6201/public_html/include/modifWine.php on line 53
-[01-Feb-2025 22:37:00 Europe/Paris] PHP Notice:  Trying to access array offset on value of type null in /home/thibaultgicquel6201/public_html/include/modifWine.php on line 53
-[01-Feb-2025 22:41:41 Europe/Paris] PHP Notice:  Trying to access array offset on value of type null in /home/thibaultgicquel6201/public_html/include/modifWine.php on line 53
-[01-Feb-2025 22:44:25 Europe/Paris] PHP Notice:  Trying to access array offset on value of type null in /home/thibaultgicquel6201/public_html/include/modifWine.php on line 53
-[01-Feb-2025 22:45:19 Europe/Paris] PHP Notice:  Trying to access array offset on value of type null in /home/thibaultgicquel6201/public_html/include/modifWine.php on line 53
-[01-Feb-2025 22:48:15 Europe/Paris] PHP Notice:  Trying to access array offset on value of type null in /home/thibaultgicquel6201/public_html/include/modifWine.php on line 53
-[01-Feb-2025 22:54:55 Europe/Paris] PHP Notice:  Trying to access array offset on value of type null in /home/thibaultgicquel6201/public_html/include/modifWine.php on line 53
-[01-Feb-2025 23:14:27 Europe/Paris] PHP Warning:  move_uploaded_file(wines/vin-definition.webp): failed to open stream: No such file or directory in /home/thibaultgicquel6201/public_html/include/modifWine.php on line 74
-[01-Feb-2025 23:14:27 Europe/Paris] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpjbQKsB' to 'wines/vin-definition.webp' in /home/thibaultgicquel6201/public_html/include/modifWine.php on line 74
-[03-Feb-2025 13:43:10 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: The block 'content' has already been defined line 36. in /home/thibaultgicquel6201/public_html/templates/layout.twig:41
-Stack trace:
-#0 /home/vendor/twig/twig/src/Parser.php(171): Twig\TokenParser\BlockTokenParser->parse()
-#1 /home/vendor/twig/twig/src/TokenParser/IfTokenParser.php(50): Twig\Parser->subparse()
-#2 /home/vendor/twig/twig/src/Parser.php(171): Twig\TokenParser\IfTokenParser->parse()
-#3 /home/vendor/twig/twig/src/Parser.php(84): Twig\Parser->subparse()
-#4 /home/vendor/twig/twig/src/Environment.php(488): Twig\Parser->parse()
-#5 /home/vendor/twig/twig/src/Environment.php(516): Twig\Environment->parse()
-#6 /home/vendor/twig/twig/src/Environment.php(348): Twig\Environment->compileSource()
-#7 /home/vendor/twig/twig/src/Template.php(322): Twig\Environment->loadTemplate()
-#8 /home/vendor/twig/twig/src/Environment.php(358) : eval()'d code(41): Twig\Template->loadTemplate()
-#9 /home/vendor/twig/twig/src/Template.php(394): __TwigTemplate_2d2c7547e138096ba23cb05e4d2320e8dd828 in /home/thibaultgicquel6201/public_html/templates/layout.twig on line 41
-[03-Feb-2025 13:43:42 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: The block 'content' has already been defined line 36. in /home/thibaultgicquel6201/public_html/templates/layout.twig:41
-Stack trace:
-#0 /home/vendor/twig/twig/src/Parser.php(171): Twig\TokenParser\BlockTokenParser->parse()
-#1 /home/vendor/twig/twig/src/TokenParser/IfTokenParser.php(50): Twig\Parser->subparse()
-#2 /home/vendor/twig/twig/src/Parser.php(171): Twig\TokenParser\IfTokenParser->parse()
-#3 /home/vendor/twig/twig/src/Parser.php(84): Twig\Parser->subparse()
-#4 /home/vendor/twig/twig/src/Environment.php(488): Twig\Parser->parse()
-#5 /home/vendor/twig/twig/src/Environment.php(516): Twig\Environment->parse()
-#6 /home/vendor/twig/twig/src/Environment.php(348): Twig\Environment->compileSource()
-#7 /home/vendor/twig/twig/src/Template.php(322): Twig\Environment->loadTemplate()
-#8 /home/vendor/twig/twig/src/Environment.php(358) : eval()'d code(41): Twig\Template->loadTemplate()
-#9 /home/vendor/twig/twig/src/Template.php(394): __TwigTemplate_2d2c7547e138096ba23cb05e4d2320e8dd828 in /home/thibaultgicquel6201/public_html/templates/layout.twig on line 41
-[03-Feb-2025 13:43:43 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: The block 'content' has already been defined line 36. in /home/thibaultgicquel6201/public_html/templates/layout.twig:41
-Stack trace:
-#0 /home/vendor/twig/twig/src/Parser.php(171): Twig\TokenParser\BlockTokenParser->parse()
-#1 /home/vendor/twig/twig/src/TokenParser/IfTokenParser.php(50): Twig\Parser->subparse()
-#2 /home/vendor/twig/twig/src/Parser.php(171): Twig\TokenParser\IfTokenParser->parse()
-#3 /home/vendor/twig/twig/src/Parser.php(84): Twig\Parser->subparse()
-#4 /home/vendor/twig/twig/src/Environment.php(488): Twig\Parser->parse()
-#5 /home/vendor/twig/twig/src/Environment.php(516): Twig\Environment->parse()
-#6 /home/vendor/twig/twig/src/Environment.php(348): Twig\Environment->compileSource()
-#7 /home/vendor/twig/twig/src/Template.php(322): Twig\Environment->loadTemplate()
-#8 /home/vendor/twig/twig/src/Environment.php(358) : eval()'d code(42): Twig\Template->loadTemplate()
-#9 /home/vendor/twig/twig/src/Template.php(394): __TwigTemplate_2e714db03885868d6cf1919327bb3dee4511a in /home/thibaultgicquel6201/public_html/templates/layout.twig on line 41
-[03-Feb-2025 13:43:46 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: The block 'content' has already been defined line 36. in /home/thibaultgicquel6201/public_html/templates/layout.twig:41
-Stack trace:
-#0 /home/vendor/twig/twig/src/Parser.php(171): Twig\TokenParser\BlockTokenParser->parse()
-#1 /home/vendor/twig/twig/src/TokenParser/IfTokenParser.php(50): Twig\Parser->subparse()
-#2 /home/vendor/twig/twig/src/Parser.php(171): Twig\TokenParser\IfTokenParser->parse()
-#3 /home/vendor/twig/twig/src/Parser.php(84): Twig\Parser->subparse()
-#4 /home/vendor/twig/twig/src/Environment.php(488): Twig\Parser->parse()
-#5 /home/vendor/twig/twig/src/Environment.php(516): Twig\Environment->parse()
-#6 /home/vendor/twig/twig/src/Environment.php(348): Twig\Environment->compileSource()
-#7 /home/vendor/twig/twig/src/Template.php(322): Twig\Environment->loadTemplate()
-#8 /home/vendor/twig/twig/src/Environment.php(358) : eval()'d code(42): Twig\Template->loadTemplate()
-#9 /home/vendor/twig/twig/src/Template.php(394): __TwigTemplate_2e714db03885868d6cf1919327bb3dee4511a in /home/thibaultgicquel6201/public_html/templates/layout.twig on line 41
-[03-Feb-2025 23:07:46 Europe/Paris] PHP Fatal error:  Uncaught Error: Object of class PDOStatement could not be converted to string in /home/thibaultgicquel6201/public_html/include/modifWine.php:44
-Stack trace:
-#0 /home/thibaultgicquel6201/public_html/include/modifWine.php(80): maFonctionPHP()
-#1 {main}
-  thrown in /home/thibaultgicquel6201/public_html/include/modifWine.php on line 44
-[03-Feb-2025 23:48:58 Europe/Paris] PHP Fatal error:  Uncaught Error: Cannot pass parameter 2 by reference in /home/thibaultgicquel6201/public_html/include/modifWine.php:27
-Stack trace:
-#0 /home/thibaultgicquel6201/public_html/include/modifWine.php(79): maFonctionPHP()
-#1 {main}
-  thrown in /home/thibaultgicquel6201/public_html/include/modifWine.php on line 27
-[11-Feb-2025 12:46:15 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'Student' not found in /home/thibaultgicquel6201/public_html/api/person/read.php:8
+[21-Feb-2025 18:23:57 Europe/Berlin] PHP Warning:  require_once(include/config.php): failed to open stream: No such file or directory in /home/thibaultgicquel6201/public_html/api/login/index.php on line 2
+[21-Feb-2025 18:23:57 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'include/config.php' (include_path='.:/usr/share/php') in /home/thibaultgicquel6201/public_html/api/login/index.php on line 2
+[21-Feb-2025 18:23:57 Europe/Berlin] PHP Warning:  file_get_contents(https://devbox.u-angers.fr/~thibaultgicquel6201/api/login/): failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+ in /home/thibaultgicquel6201/public_html/api/test/index.php on line 21
+[21-Feb-2025 18:23:57 Europe/Berlin] PHP Notice:  Trying to get property 'result' of non-object in /home/thibaultgicquel6201/public_html/api/test/index.php on line 27
+[21-Feb-2025 18:24:35 Europe/Berlin] PHP Warning:  require_once(../include/config.php): failed to open stream: No such file or directory in /home/thibaultgicquel6201/public_html/api/login/index.php on line 2
+[21-Feb-2025 18:24:35 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required '../include/config.php' (include_path='.:/usr/share/php') in /home/thibaultgicquel6201/public_html/api/login/index.php on line 2
+[21-Feb-2025 18:24:35 Europe/Berlin] PHP Warning:  file_get_contents(https://devbox.u-angers.fr/~thibaultgicquel6201/api/login/): failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+ in /home/thibaultgicquel6201/public_html/api/test/index.php on line 21
+[21-Feb-2025 18:24:35 Europe/Berlin] PHP Notice:  Trying to get property 'result' of non-object in /home/thibaultgicquel6201/public_html/api/test/index.php on line 27
+[21-Feb-2025 21:12:08 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Configuration' not found in /home/thibaultgicquel6201/public_html/index.php:25
 Stack trace:
 #0 {main}
-  thrown in /home/thibaultgicquel6201/public_html/api/person/read.php on line 8
-[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: firstname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 20
-[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: lastname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 21
-[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: pass in /home/thibaultgicquel6201/public_html/api/person/read.php on line 23
-[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: firstname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 20
-[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: lastname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 21
-[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: pass in /home/thibaultgicquel6201/public_html/api/person/read.php on line 23
-[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: firstname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 20
-[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: lastname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 21
-[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: pass in /home/thibaultgicquel6201/public_html/api/person/read.php on line 23
-[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: firstname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 20
-[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: lastname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 21
-[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: pass in /home/thibaultgicquel6201/public_html/api/person/read.php on line 23
-[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: firstname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 20
-[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: lastname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 21
-[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: pass in /home/thibaultgicquel6201/public_html/api/person/read.php on line 23
-[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: firstname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 20
-[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: lastname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 21
-[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: pass in /home/thibaultgicquel6201/public_html/api/person/read.php on line 23
-[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: firstname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 20
-[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: lastname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 21
-[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: pass in /home/thibaultgicquel6201/public_html/api/person/read.php on line 23
-[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: firstname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 20
-[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: lastname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 21
-[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: pass in /home/thibaultgicquel6201/public_html/api/person/read.php on line 23
-[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: firstname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 20
-[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: lastname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 21
-[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: pass in /home/thibaultgicquel6201/public_html/api/person/read.php on line 23
-[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: firstname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 20
-[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: lastname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 21
-[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: pass in /home/thibaultgicquel6201/public_html/api/person/read.php on line 23
-[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: firstname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 20
-[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: lastname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 21
-[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: pass in /home/thibaultgicquel6201/public_html/api/person/read.php on line 23
-[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: firstname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 20
-[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: lastname in /home/thibaultgicquel6201/public_html/api/person/read.php on line 21
-[11-Feb-2025 12:48:11 Europe/Berlin] PHP Notice:  Undefined variable: pass in /home/thibaultgicquel6201/public_html/api/person/read.php on line 23
-[11-Feb-2025 14:42:27 Europe/Berlin] PHP Warning:  Unterminated comment starting line 21 in /home/thibaultgicquel6201/public_html/index.php on line 21
-[11-Feb-2025 14:43:30 Europe/Paris] PHP Notice:  Undefined index: username in /home/thibaultgicquel6201/public_html/index.php on line 15
-[11-Feb-2025 14:43:30 Europe/Paris] PHP Notice:  Undefined index: password in /home/thibaultgicquel6201/public_html/index.php on line 15
-[11-Feb-2025 14:43:30 Europe/Berlin] PHP Notice:  Undefined index: username in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
-[11-Feb-2025 14:43:30 Europe/Berlin] PHP Notice:  Undefined index: password in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
-[11-Feb-2025 14:47:25 Europe/Berlin] PHP Notice:  Undefined index: HTTP_AUTHORIZATION in /home/thibaultgicquel6201/public_html/api/test/service.php on line 5
-[11-Feb-2025 14:49:20 Europe/Berlin] PHP Notice:  Undefined index: username in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
-[11-Feb-2025 14:49:20 Europe/Berlin] PHP Notice:  Undefined index: password in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
-[11-Feb-2025 14:49:35 Europe/Berlin] PHP Notice:  Undefined index: username in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
-[11-Feb-2025 14:49:35 Europe/Berlin] PHP Notice:  Undefined index: password in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
-[11-Feb-2025 14:52:43 Europe/Berlin] PHP Notice:  Undefined index: username in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
-[11-Feb-2025 14:52:43 Europe/Berlin] PHP Notice:  Undefined index: password in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
-[11-Feb-2025 14:52:44 Europe/Berlin] PHP Notice:  Undefined index: username in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
-[11-Feb-2025 14:52:44 Europe/Berlin] PHP Notice:  Undefined index: password in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
-[11-Feb-2025 14:52:51 Europe/Berlin] PHP Notice:  Undefined index: username in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
-[11-Feb-2025 14:52:51 Europe/Berlin] PHP Notice:  Undefined index: password in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
-[11-Feb-2025 14:57:19 Europe/Berlin] PHP Notice:  Undefined index: username in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
-[11-Feb-2025 14:57:19 Europe/Berlin] PHP Notice:  Undefined index: password in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
-[11-Feb-2025 14:59:36 Europe/Berlin] PHP Notice:  Undefined index: username in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
-[11-Feb-2025 14:59:36 Europe/Berlin] PHP Notice:  Undefined index: password in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
-[11-Feb-2025 14:59:52 Europe/Berlin] PHP Notice:  Undefined index: username in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
-[11-Feb-2025 14:59:52 Europe/Berlin] PHP Notice:  Undefined index: password in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
-[11-Feb-2025 15:04:07 Europe/Berlin] PHP Notice:  Undefined index: username in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
-[11-Feb-2025 15:04:07 Europe/Berlin] PHP Notice:  Undefined index: password in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
+  thrown in /home/thibaultgicquel6201/public_html/index.php on line 25
+[21-Feb-2025 21:26:04 Europe/Paris] PHP Notice:  Undefined variable: action in /home/thibaultgicquel6201/public_html/index.php on line 10
+[21-Feb-2025 21:26:04 Europe/Paris] PHP Notice:  Undefined variable: error in /home/thibaultgicquel6201/public_html/index.php on line 10
+[21-Feb-2025 21:26:17 Europe/Paris] PHP Notice:  Undefined variable: action in /home/thibaultgicquel6201/public_html/index.php on line 10
+[21-Feb-2025 21:26:17 Europe/Paris] PHP Notice:  Undefined variable: error in /home/thibaultgicquel6201/public_html/index.php on line 10
+[21-Feb-2025 21:26:18 Europe/Paris] PHP Notice:  Undefined variable: action in /home/thibaultgicquel6201/public_html/index.php on line 10
+[21-Feb-2025 21:26:18 Europe/Paris] PHP Notice:  Undefined variable: error in /home/thibaultgicquel6201/public_html/index.php on line 10
+[21-Feb-2025 21:26:35 Europe/Paris] PHP Notice:  Undefined variable: action in /home/thibaultgicquel6201/public_html/index.php on line 10
+[21-Feb-2025 21:26:35 Europe/Paris] PHP Notice:  Undefined variable: error in /home/thibaultgicquel6201/public_html/index.php on line 10
+[21-Feb-2025 21:26:37 Europe/Paris] PHP Notice:  Undefined variable: action in /home/thibaultgicquel6201/public_html/index.php on line 10
+[21-Feb-2025 21:26:37 Europe/Paris] PHP Notice:  Undefined variable: error in /home/thibaultgicquel6201/public_html/index.php on line 10
+[21-Feb-2025 21:29:07 Europe/Paris] PHP Notice:  Undefined variable: error in /home/thibaultgicquel6201/public_html/index.php on line 72
+[21-Feb-2025 21:29:16 Europe/Paris] PHP Notice:  Undefined variable: error in /home/thibaultgicquel6201/public_html/index.php on line 72
+[21-Feb-2025 21:30:30 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\LoaderError: Unable to find template "login/n.twig" (looked into: /home/thibaultgicquel6201/public_html/include/../templates). in /home/vendor/twig/twig/src/Loader/FilesystemLoader.php:227
+Stack trace:
+#0 /home/vendor/twig/twig/src/Loader/FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate()
+#1 /home/vendor/twig/twig/src/Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey()
+#2 /home/vendor/twig/twig/src/Environment.php(309): Twig\Environment->getTemplateClass()
+#3 /home/thibaultgicquel6201/public_html/index.php(78): Twig\Environment->load()
+#4 {main}
+  thrown in /home/vendor/twig/twig/src/Loader/FilesystemLoader.php on line 227
+[21-Feb-2025 21:30:34 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\LoaderError: Unable to find template "login/n.twig" (looked into: /home/thibaultgicquel6201/public_html/include/../templates). in /home/vendor/twig/twig/src/Loader/FilesystemLoader.php:227
+Stack trace:
+#0 /home/vendor/twig/twig/src/Loader/FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate()
+#1 /home/vendor/twig/twig/src/Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey()
+#2 /home/vendor/twig/twig/src/Environment.php(309): Twig\Environment->getTemplateClass()
+#3 /home/thibaultgicquel6201/public_html/index.php(78): Twig\Environment->load()
+#4 {main}
+  thrown in /home/vendor/twig/twig/src/Loader/FilesystemLoader.php on line 227
+[21-Feb-2025 22:05:36 Europe/Berlin] PHP Warning:  The use statement with non-compound name 'DateTimeZone' has no effect in /home/thibaultgicquel6201/public_html/index.php on line 11
+[21-Feb-2025 22:05:36 Europe/Berlin] PHP Warning:  The use statement with non-compound name 'DateInterval' has no effect in /home/thibaultgicquel6201/public_html/index.php on line 12
+[21-Feb-2025 22:09:12 Europe/Paris] PHP Notice:  Undefined index: token in /home/thibaultgicquel6201/public_html/php/get2fa.php on line 15
+[21-Feb-2025 22:09:12 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function claims() on null in /home/thibaultgicquel6201/public_html/php/get2fa.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/thibaultgicquel6201/public_html/php/get2fa.php on line 15
+[21-Feb-2025 22:15:52 Europe/Paris] PHP Notice:  Undefined index: username in /home/thibaultgicquel6201/public_html/index.php on line 37
+[21-Feb-2025 22:15:52 Europe/Paris] PHP Notice:  Undefined index: password in /home/thibaultgicquel6201/public_html/index.php on line 37
+[21-Feb-2025 22:15:52 Europe/Berlin] PHP Notice:  Undefined index: username in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
+[21-Feb-2025 22:15:52 Europe/Berlin] PHP Notice:  Undefined index: password in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
+[21-Feb-2025 22:16:40 Europe/Paris] PHP Notice:  Undefined index: username in /home/thibaultgicquel6201/public_html/index.php on line 37
+[21-Feb-2025 22:16:40 Europe/Paris] PHP Notice:  Undefined index: password in /home/thibaultgicquel6201/public_html/index.php on line 37
+[21-Feb-2025 22:16:40 Europe/Berlin] PHP Notice:  Undefined index: username in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
+[21-Feb-2025 22:16:40 Europe/Berlin] PHP Notice:  Undefined index: password in /home/thibaultgicquel6201/public_html/api/login/index.php on line 9
+[21-Feb-2025 22:45:57 Europe/Paris] PHP Warning:  file_get_contents(https://devbox.u-angers.fr/~agodon/api/person/read.php): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/thibaultgicquel6201/public_html/php/manager.php on line 25
+[21-Feb-2025 22:46:03 Europe/Paris] PHP Warning:  file_get_contents(https://devbox.u-angers.fr/~agodon/api/person/read.php): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/thibaultgicquel6201/public_html/php/manager.php on line 25
+[21-Feb-2025 22:46:30 Europe/Paris] PHP Warning:  file_get_contents(https://devbox.u-angers.fr/~agodon/api/person/read.php): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/thibaultgicquel6201/public_html/php/manager.php on line 25
+[21-Feb-2025 22:46:38 Europe/Paris] PHP Warning:  file_get_contents(https://devbox.u-angers.fr/~agodon/api/person/read.php): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/thibaultgicquel6201/public_html/php/manager.php on line 25
+[21-Feb-2025 22:46:51 Europe/Paris] PHP Warning:  file_get_contents(https://devbox.u-angers.fr/~agodon/api/person/read.php): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/thibaultgicquel6201/public_html/php/manager.php on line 25
+[21-Feb-2025 22:48:10 Europe/Paris] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in /home/thibaultgicquel6201/public_html/php/manager.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/thibaultgicquel6201/public_html/php/manager.php on line 26
+[21-Feb-2025 22:56:16 Europe/Paris] PHP Notice:  Undefined variable: personListJson in /home/thibaultgicquel6201/public_html/include/getAllWines.php on line 9
+[21-Feb-2025 22:56:45 Europe/Berlin] PHP Warning:  include_once(../objects/wine.php): failed to open stream: No such file or directory in /home/thibaultgicquel6201/public_html/api/wine/read.php on line 6
+[21-Feb-2025 22:56:45 Europe/Berlin] PHP Warning:  include_once(): Failed opening '../objects/wine.php' for inclusion (include_path='.:/usr/share/php') in /home/thibaultgicquel6201/public_html/api/wine/read.php on line 6
+[21-Feb-2025 22:56:45 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'Wine' not found in /home/thibaultgicquel6201/public_html/api/wine/read.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/thibaultgicquel6201/public_html/api/wine/read.php on line 10
+[21-Feb-2025 22:56:45 Europe/Paris] PHP Warning:  file_get_contents(https://devbox.u-angers.fr/~thibaultgicquel6201/api/wine/read.php): failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+ in /home/thibaultgicquel6201/public_html/include/getAllWines.php on line 8
+[21-Feb-2025 22:56:45 Europe/Paris] PHP Notice:  Undefined variable: personListJson in /home/thibaultgicquel6201/public_html/include/getAllWines.php on line 9
+[21-Feb-2025 22:57:11 Europe/Paris] PHP Notice:  Undefined variable: personListJson in /home/thibaultgicquel6201/public_html/include/getAllWines.php on line 9
+[21-Feb-2025 22:58:36 Europe/Paris] PHP Notice:  Undefined variable: personListJson in /home/thibaultgicquel6201/public_html/include/getAllWines.php on line 9
+[21-Feb-2025 22:59:16 Europe/Paris] PHP Notice:  Undefined variable: personListJson in /home/thibaultgicquel6201/public_html/include/getAllWines.php on line 9
+[21-Feb-2025 22:59:55 Europe/Paris] PHP Notice:  Undefined variable: personListJson in /home/thibaultgicquel6201/public_html/include/getAllWines.php on line 9
+[21-Feb-2025 22:59:55 Europe/Paris] PHP Notice:  Array to string conversion in /home/thibaultgicquel6201/public_html/include/getAllWines.php on line 17
+[21-Feb-2025 23:00:23 Europe/Berlin] PHP Notice:  Undefined variable: personListJson in /home/thibaultgicquel6201/public_html/include/getAllWines.php on line 9
+[21-Feb-2025 23:00:23 Europe/Berlin] PHP Notice:  Array to string conversion in /home/thibaultgicquel6201/public_html/include/getAllWines.php on line 17
+[21-Feb-2025 23:00:43 Europe/Berlin] PHP Notice:  Undefined variable: personListJson in /home/thibaultgicquel6201/public_html/include/getAllWines.php on line 9
