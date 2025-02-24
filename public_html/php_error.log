@@ -87,3 +87,23 @@ Stack trace:
 [21-Feb-2025 23:00:23 Europe/Berlin] PHP Notice:  Undefined variable: personListJson in /home/thibaultgicquel6201/public_html/include/getAllWines.php on line 9
 [21-Feb-2025 23:00:23 Europe/Berlin] PHP Notice:  Array to string conversion in /home/thibaultgicquel6201/public_html/include/getAllWines.php on line 17
 [21-Feb-2025 23:00:43 Europe/Berlin] PHP Notice:  Undefined variable: personListJson in /home/thibaultgicquel6201/public_html/include/getAllWines.php on line 9
+[24-Feb-2025 14:19:20 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to undefined function NOW() in /home/thibaultgicquel6201/public_html/include/addMember.php:30
+Stack trace:
+#0 /home/thibaultgicquel6201/public_html/php/manager.php(19): include()
+#1 {main}
+  thrown in /home/thibaultgicquel6201/public_html/include/addMember.php on line 30
+[24-Feb-2025 14:21:14 Europe/Paris] PHP Warning:  Use of undefined constant st - assumed 'st' (this will throw an Error in a future version of PHP) in /home/thibaultgicquel6201/public_html/include/addMember.php on line 35
+[24-Feb-2025 14:53:11 Europe/Paris] PHP Warning:  stream_get_meta_data(): supplied resource is not a valid stream resource in /home/thibaultgicquel6201/public_html/include/addMember.php on line 36
+[24-Feb-2025 14:55:16 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$date_creation in /home/thibaultgicquel6201/public_html/api/person/create.php on line 23
+[24-Feb-2025 14:55:16 Europe/Paris] PHP Warning:  stream_get_meta_data(): supplied resource is not a valid stream resource in /home/thibaultgicquel6201/public_html/include/addMember.php on line 36
+[24-Feb-2025 15:04:35 Europe/Berlin] PHP Notice:  Trying to get property 'nom' of non-object in /home/thibaultgicquel6201/public_html/api/person/create.php on line 17
+[24-Feb-2025 15:04:35 Europe/Berlin] PHP Notice:  Trying to get property 'prenom' of non-object in /home/thibaultgicquel6201/public_html/api/person/create.php on line 18
+[24-Feb-2025 15:04:35 Europe/Berlin] PHP Notice:  Trying to get property 'email' of non-object in /home/thibaultgicquel6201/public_html/api/person/create.php on line 19
+[24-Feb-2025 15:04:35 Europe/Berlin] PHP Notice:  Trying to get property 'status' of non-object in /home/thibaultgicquel6201/public_html/api/person/create.php on line 20
+[24-Feb-2025 15:04:35 Europe/Berlin] PHP Notice:  Trying to get property 'login' of non-object in /home/thibaultgicquel6201/public_html/api/person/create.php on line 21
+[24-Feb-2025 15:04:35 Europe/Berlin] PHP Notice:  Trying to get property 'password' of non-object in /home/thibaultgicquel6201/public_html/api/person/create.php on line 22
+[24-Feb-2025 15:04:35 Europe/Berlin] PHP Notice:  Trying to get property 'date_creation' of non-object in /home/thibaultgicquel6201/public_html/api/person/create.php on line 23
+[24-Feb-2025 15:04:35 Europe/Berlin] PHP Notice:  Trying to get property 'telephone' of non-object in /home/thibaultgicquel6201/public_html/api/person/create.php on line 24
+[24-Feb-2025 15:07:09 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$date_creation in /home/thibaultgicquel6201/public_html/api/person/create.php on line 23
+[24-Feb-2025 15:08:19 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$date_creation in /home/thibaultgicquel6201/public_html/api/person/create.php on line 23
+[24-Feb-2025 15:10:04 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$date_creation in /home/thibaultgicquel6201/public_html/api/person/create.php on line 23

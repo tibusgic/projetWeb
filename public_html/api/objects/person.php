@@ -20,7 +20,7 @@ class Person {
   function create(){
 
     $query = "INSERT INTO ".$this->table_name." SET
-      nom=:nom, prenom=:prenom, email=:email, status=:status, login=:login, password=:password, date_creation=:date_creation, telephone=:telephone";
+      nom=:nom, prenom=:prenom, email=:email, status=:status, login=:login, password=:password, date_creation=NOW(), telephone=:telephone";
     
 
     $stmt = $this->conn->prepare($query);
@@ -31,7 +31,6 @@ class Person {
     $this->status = htmlspecialchars(strip_tags($this->status));
     $this->login = htmlspecialchars(strip_tags($this->login));
     $this->password = htmlspecialchars(strip_tags($this->password));
-    $this->date_creation = htmlspecialchars(strip_tags($this->date_creation));
     $this->telephone = htmlspecialchars(strip_tags($this->telephone));
 
 
@@ -41,11 +40,15 @@ class Person {
     $stmt->bindParam(":status", $this->status);
     $stmt->bindParam(":login", $this->login);
     $stmt->bindParam(":password", $this->password);
-    $stmt->bindParam(":date_creation", $this->date_creation);
     $stmt->bindParam(":telephone", $this->telephone);
 
     if($stmt->execute()){
         return true;
+    }
+    else {
+      // Afficher les erreurs de la requête SQL
+      $error = $stmt->errorInfo();
+      echo "Erreur SQL : " . $error[2];
     }
 
     return false;
