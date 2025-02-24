@@ -10,7 +10,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $telephone = $_POST['telephone'] ?? null; // si le téléphone n'est pas renseigné, ce sera null
     $status = $_POST['status'];
 
-    // Hachage du mot de passe
     $hashedPassword = md5($password);
 
 
