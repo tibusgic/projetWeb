@@ -2,7 +2,7 @@
 <section id="wine-section" class="section-wine">
     <div class="container-wine">
         <!-- Recherche et filtres -->
-        <button class="btn btn-success col-lg-3" type="button" onclick="newWine()" ><i class="uil uil-filter"></i>Nouveau Vin</button>
+        <button class="btn btn-success col-lg-3" type="button" onclick="OpenModalNewWine()" ><i class="uil uil-filter"></i>Nouveau Vin</button>
         <div class="justify-content-center row">
             <div class="col-lg-12">
                 <div class="wine-list-widgets mb-4">
@@ -103,7 +103,7 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="editNewWineModalLabel">Modifier le vin</h5>
+                            <h5 class="modal-title" id="editNewWineModalLabel">Ajouter un nouveau vin</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
@@ -202,12 +202,102 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-                            <button type="button" class="btn btn-primary" id="saveChangesButton" onclick="ModifWine({{ winesListElem.id }})">Enregistrer</button>
+                            <button type="button" class="btn btn-primary" id="saveChangesButton" onclick="CreateNewWine()">Enregistrer</button>
                         </div>
                     </div>
                 </div>
             </div>
     <script>
+// --------------- nouveau vin -------------------------------------------------------------------------------------------------------------------------------------
+        function OpenModalNewWine() {
+            console.log("Ouverture du modal pour ajouter un nouveau vin");
+            let modal = document.getElementById('editNewWineModal');
+            if (modal) {
+                $(modal).modal('show');
+            } else {
+                console.error("Modale pour ajouter un vin non trouvée");
+            }
+        }
+
+        function CreateNewWine() {
+            // Récupérer l'élément input de type fichier
+            const fileInput = document.getElementById("path_img");
+
+            // Créer un objet FormData pour envoyer les données du formulaire
+            const formData = new FormData();
+
+            // Ajouter les champs du formulaire à FormData
+            formData.append("domaine_name", document.getElementById("domaine_name").value);
+            formData.append("appellation", document.getElementById("appellation").value);
+            formData.append("region", document.getElementById("region").value);
+            formData.append("country_of_origin", document.getElementById("country_of_origin").value);
+            formData.append("grape_varieties", document.getElementById("grape_varieties").value);
+            formData.append("wine_type", document.getElementById("wine_type").value);
+
+            let vintageValue = document.getElementById("vintage").value.trim();
+            if (!vintageValue || isNaN(vintageValue) || vintageValue.length !== 4) {
+                vintageValue = null;  // Laisser null si c'est vide ou invalide
+            }
+            formData.append("vintage", vintageValue);
+
+            let alcoholContent = document.getElementById("alcohol_content").value.trim();
+            if (!alcoholContent || isNaN(alcoholContent)) {
+                alcoholContent = null;  // Laisser null si c'est vide ou invalide
+            }
+            formData.append("alcohol_content", alcoholContent);
+
+            formData.append("classification", document.getElementById("classification").value);
+            formData.append("certifications", document.getElementById("certifications").value);
+            formData.append("bottle_size", document.getElementById("bottle_size").value);
+            formData.append("cork_type", document.getElementById("cork_type").value);
+            formData.append("serving_temperature", document.getElementById("serving_temperature").value);
+            formData.append("aging_potential", document.getElementById("aging_potential").value);
+
+            // Gérer l'image
+            if (fileInput.files.length > 0) {
+                // Si un fichier est uploadé, utiliser ce fichier
+                formData.append("path_img", fileInput.files[0]);
+            }
+
+            formData.append("stock_limit", document.getElementById("stock_limit").value);
+
+            // Envoyer les données au serveur
+            fetch('../include/createWine.php', {
+                method: 'POST',
+                body: formData // Utiliser FormData pour envoyer les données
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log("Réponse du serveur:");
+                console.table(data);
+                $('#editNewWineModal').modal('hide'); // Fermer la modale après la réponse
+            })
+            .catch(error => console.error('Erreur:', error));
+        }
+
+        // Gestion de l'affichage de l'image sélectionnée dans le select
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("path_img").addEventListener("change", function () {
+                const fileInput = this.files[0];
+                if (fileInput) {
+                    const reader = new FileReader();
+                    reader.onload = function (e) {
+                        let previewImage = document.getElementById("preview-image");
+                        previewImage.src = e.target.result;
+                    }
+                    reader.readAsDataURL(fileInput);
+                }
+            });
+        });
+
+
+
+
+//-------------- filtre --------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
         document.addEventListener("DOMContentLoaded", function () {
             const searchInput = document.getElementById("wineSearchInput");
             const regionSelect = document.getElementById("regionSelect");
@@ -343,7 +433,7 @@
 
             showPage(currentPage);
             createPagination();
-        });
+        }); 
 
 
 

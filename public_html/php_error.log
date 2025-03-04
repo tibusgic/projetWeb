@@ -107,3 +107,23 @@ Stack trace:
 [24-Feb-2025 15:07:09 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$date_creation in /home/thibaultgicquel6201/public_html/api/person/create.php on line 23
 [24-Feb-2025 15:08:19 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$date_creation in /home/thibaultgicquel6201/public_html/api/person/create.php on line 23
 [24-Feb-2025 15:10:04 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$date_creation in /home/thibaultgicquel6201/public_html/api/person/create.php on line 23
+[02-Mar-2025 20:43:30 Europe/Paris] PHP Notice:  Undefined index: user in /home/thibaultgicquel6201/public_html/php/get2fa.php on line 15
+[02-Mar-2025 20:43:30 Europe/Paris] PHP Notice:  Trying to access array offset on value of type null in /home/thibaultgicquel6201/public_html/php/get2fa.php on line 15
+[02-Mar-2025 20:43:30 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function claims() on null in /home/thibaultgicquel6201/public_html/php/get2fa.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/thibaultgicquel6201/public_html/php/get2fa.php on line 15
+[04-Mar-2025 15:38:27 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$add_date in /home/thibaultgicquel6201/public_html/api/wine/modif.php on line 36
+[04-Mar-2025 15:38:27 Europe/Berlin] PHP Notice:  Undefined variable: query in /home/thibaultgicquel6201/public_html/api/objects/wines.php on line 118
+[04-Mar-2025 15:43:24 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$add_date in /home/thibaultgicquel6201/public_html/api/wine/modif.php on line 36
+[04-Mar-2025 15:43:24 Europe/Berlin] PHP Notice:  Undefined variable: query in /home/thibaultgicquel6201/public_html/api/objects/wines.php on line 118
+[04-Mar-2025 15:44:23 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$add_date in /home/thibaultgicquel6201/public_html/api/wine/modif.php on line 36
+[04-Mar-2025 15:44:23 Europe/Berlin] PHP Notice:  Undefined variable: query in /home/thibaultgicquel6201/public_html/api/objects/wines.php on line 118
+[04-Mar-2025 15:44:47 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$add_date in /home/thibaultgicquel6201/public_html/api/wine/modif.php on line 36
+[04-Mar-2025 15:44:47 Europe/Berlin] PHP Notice:  Undefined variable: query in /home/thibaultgicquel6201/public_html/api/objects/wines.php on line 118
+[04-Mar-2025 15:46:51 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$add_date in /home/thibaultgicquel6201/public_html/api/wine/modif.php on line 36
+[04-Mar-2025 15:46:51 Europe/Berlin] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/thibaultgicquel6201/public_html/api/objects/wines.php on line 158
+[04-Mar-2025 15:48:27 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$add_date in /home/thibaultgicquel6201/public_html/api/wine/modif.php on line 36
+[04-Mar-2025 15:48:42 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$add_date in /home/thibaultgicquel6201/public_html/api/wine/modif.php on line 36
+[04-Mar-2025 15:48:52 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$add_date in /home/thibaultgicquel6201/public_html/api/wine/modif.php on line 36
+[04-Mar-2025 15:49:21 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$add_date in /home/thibaultgicquel6201/public_html/api/wine/modif.php on line 36
