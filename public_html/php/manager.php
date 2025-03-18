@@ -36,6 +36,7 @@ if ($activePage === 'members') {
 elseif($activePage === 'wines'){
     include('../include/getAllWines.php');
     include('../include/getImages.php');
+   // include('../include/addWine.php');
 }
 elseif($activePage === 'settings'){
     include('../include/settings.php');

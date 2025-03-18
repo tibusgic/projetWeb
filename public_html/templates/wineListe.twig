@@ -262,7 +262,7 @@
             formData.append("stock_limit", document.getElementById("stock_limit").value);
 
             // Envoyer les données au serveur
-            fetch('../include/createWine.php', {
+            fetch('../include/addWine.php', {
                 method: 'POST',
                 body: formData // Utiliser FormData pour envoyer les données
             })
@@ -273,6 +273,7 @@
                 $('#editNewWineModal').modal('hide'); // Fermer la modale après la réponse
             })
             .catch(error => console.error('Erreur:', error));
+
         }
 
         // Gestion de l'affichage de l'image sélectionnée dans le select

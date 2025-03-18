@@ -32,7 +32,6 @@ $wine->path_img = $data->$path_img;
 $wine->add_date = $data->$add_date;
 $wine->stock_limit = $data->$stock_limit;
 
- 
 if($wine->create()){
     echo '{';
         echo '"message": "Wine was created."';

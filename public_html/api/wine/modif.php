@@ -14,41 +14,33 @@ $wine = new Wine($db);
 // get posted data
 $data = json_decode(file_get_contents("php://input"));
 
-// Vérifie que l'ID du vin est fourni
-if (isset($data->id) && !empty($data->id)) {
-    // Affecter les valeurs des propriétés de l'objet Wine
-    $wine->id = $data->id;
-    $wine->domaine_name = $data->domaine_name;
-    $wine->appellation = $data->appellation;
-    $wine->region = $data->region;
-    $wine->country_of_origin = $data->country_of_origin;
-    $wine->grape_varieties = $data->grape_varieties;
-    $wine->wine_type = $data->wine_type;
-    $wine->vintage = $data->vintage;
-    $wine->alcohol_content = $data->alcohol_content;
-    $wine->classification = $data->classification;
-    $wine->certifications = $data->certifications;
-    $wine->bottle_size = $data->bottle_size;
-    $wine->cork_type = $data->cork_type;
-    $wine->serving_temperature = $data->serving_temperature;
-    $wine->aging_potential = $data->aging_potential;
-    $wine->path_img = $data->path_img;
-    $wine->add_date = $data->add_date;
-    $wine->stock_limit = $data->stock_limit;
+// Access the properties correctly
+$wine->domaine_name = $data->domaine_name;
+$wine->appellation = $data->appellation;
+$wine->region = $data->region;
+$wine->country_of_origin = $data->country_of_origin;
+$wine->grape_varieties = $data->grape_varieties;
+$wine->wine_type = $data->wine_type;
+$wine->vintage = $data->vintage;
+$wine->alcohol_content = $data->alcohol_content;
+$wine->classification = $data->classification;
+$wine->certifications = $data->certifications;
+$wine->bottle_size = $data->bottle_size;
+$wine->cork_type = $data->cork_type;
+$wine->serving_temperature = $data->serving_temperature;
+$wine->aging_potential = $data->aging_potential;
+$wine->path_img = $data->path_img;
+$wine->stock_limit = $data->stock_limit;
+$wine->id = $data->id; // Correct usage here
 
-    // Appeler la méthode modif() pour mettre à jour les données du vin
-    if ($wine->modif()) {
-        echo json_encode(
-            array("message" => "Wine was updated successfully.")
-        );
-    } else {
-        echo json_encode(
-            array("message" => "Unable to update wine.")
-        );
-    }
+// Call the method to modify the wine
+if ($wine->modif()) {
+    echo '{';
+        echo '"message": "Wine was modified."';
+    echo '}';
 } else {
-    echo json_encode(
-        array("message" => "ID is missing. Wine cannot be updated.")
-    );
+    echo '{';
+        echo '"message": "Unable to modify wine."';
+    echo '}';
 }
 ?>
